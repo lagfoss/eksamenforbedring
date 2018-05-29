@@ -1,0 +1,1289 @@
+/*
+Colors:
+    Black: #222222;
+    Blue: #008eed;
+
+/*-------------------------------------------------------------- */
+
+/** Table of Contents
+    1.0 - Global styles
+        1.1 - Body
+        1.2 - Scrollify Markers
+        1.3 - Slideshow Nav
+        1.4 - WhenInView styles
+    2.0 - Header
+        2.1 - Fixed & Main menu
+        2.2 - Logo
+        2.3 - Main Menu
+        2.4 - Light background header
+    3.0 - Front Page
+    4.0 - Work Grid
+        4.1 - Slideshow
+        4.11 - Slide Hover State
+        4.2 - Slideshow Player
+        4.3 - Featured Grid
+        4.4 - Archive Grid
+        4.5 - Grid Player
+        4.6 - Logo Grid
+    5.0 - Licensing
+        5.1 - Hero
+        5.2 - License Types
+        5.3 - Contact Form
+        5.31 - Submitted Notification
+        5.4 - FAQ
+    6.0 - Category
+    7.0 - Single Post
+        7.1 - Single Teaser
+        7.2 - Single and Licensing Logo
+    8.0 - Contact
+        8.1 - Newsletter Signup
+    9.0 - Takeover
+    10.0 - Animations
+    11.0 - Wordpress Required
+    */
+
+
+/*
+ * Fonts
+ */
+	/* @import url('fonts/fonts.css'); */
+
+
+
+
+  /*
+   * 1.0 Global
+   */
+   body {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 12px;
+          color: #333333;
+          background-color: #c4b298;
+          margin: 0;
+        }
+  .space{
+    width: 100%;
+    height: 20px;
+  }
+
+
+  .klient {
+    background-color: #2d314e;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    }
+
+button:hover {
+    opacity: 0.8;
+    }
+
+@font-face {
+    font-family:"augusta";
+    src: url("../font/Augusta.eot");
+    src: url("../font/Augusta.eot?#iefix") format("embedded-opentype"),
+         url("../font/Augusta.woff") format("woff"),
+         url("../font/Augusta.ttf") format("truetype"),
+         url("../font/Augusta.svg#augusta") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h1 {
+  font-family: augusta;
+  margin: auto;
+  font-size: 5.5vw;
+  padding-top: 150px;
+  letter-spacing: 1.2pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 00px 0px 80px #000000;
+}
+
+h2{
+  font-family: augusta;
+  margin: auto;
+  font-size: 3.5vw;
+  padding-top: 0px;
+  letter-spacing: 1.2pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 00px 0px 60px #000000;
+}
+
+footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.3pt;
+  line-height: 24pt;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 20px;
+  min-height: 80px;
+}
+
+.footer_tekst{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.vardekommune{
+width: 8%;
+text-align: center;
+margin-bottom: 15px;
+}
+
+.overskrift{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  font-size: 40px;
+  padding: 40px 20px 20px 20px;
+  letter-spacing: 1.2pt;
+  line-height: 44pt;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.event_kasse1{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  font-size: 30px;
+  padding: 20px 0px 0px 20px;
+  letter-spacing: 1.2pt;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+.event_kasse1 p{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 20px 30px 0;
+  font-weight: 300;
+  line-height: 14pt;
+  font-size:12px;
+}
+
+.event_kasse2{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  font-size: 30px;
+  padding: 20px 0px 0px 20px;
+  letter-spacing: 1.2pt;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+.event_kasse2 p{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 20px 30px 0;
+  font-weight: 300;
+  line-height: 14pt;
+  font-size:12px;
+
+}
+
+h3{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+margin: 0px 0 0 0;
+padding: 30px 18% 30px 18% ;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.75pt;
+color: #fff;
+}
+h4{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+margin-top: 75px;
+font-size: 2.5vw;
+font-weight: 700;
+letter-spacing: 0.75pt;
+vertical-align:middle;
+color: #fff;
+}
+
+
+h4 a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+h4  a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+h4  a:hover {
+    text-decoration: none;
+    color: #c4b298;
+}
+
+h4 a:active {
+    text-decoration: none;
+}
+
+
+.event_kasse1 a:link,.event_kasse2 a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+.event_kasse1 a:visited,.event_kasse2  a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.event_kasse1 a:hover,.event_kasse2  a:hover {
+    text-decoration: none;
+    color: #c4b298;
+}
+
+.event_kasse1 a:active,.event_kasse2 a:active {
+    text-decoration: none;
+}
+
+/*
+ * 2.0 header
+ */
+ header{
+   height: 60px;
+   background-color: #c4b298;
+   right: 0;
+   left: 0;
+   top: 0;
+ }
+
+.empty2{
+  width: 10%;
+  background-color: transparent;
+  display: block;
+
+}
+ /*
+  * 2.1 logo
+  */
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+  .banner{
+    width: 135px;
+  }
+
+  /*
+   * 2.2 nav
+   */
+
+   nav {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     width: 100%;
+     z-index: 2;
+   }
+
+   nav a {
+     display: block;
+     background-color: #c4b298;
+     color: #710000;
+     margin: 20px 20px 0px 20px;
+     height: 40px;
+     font-size: 14px;
+     text-transform: uppercase;
+     text-align: center;
+     text-decoration: none;
+     letter-spacing: 1.3pt;
+   }
+
+   nav a.active{
+     color: #2d314e;
+     font-weight: bold;
+    }
+
+   nav .icon {
+     display: none;
+   }
+
+   nav a:hover, .dropdown:hover, .droplang, .droplang-content a:hover{
+     color: #ffffff;
+   }
+
+   .dropdown {
+     display: block;
+     position: relative;
+   }
+
+   .dropdown button{
+   border: none;
+   }
+
+   .droplang {
+     margin-top: 17px;
+     width: 30px;
+     height: 20px;
+     background-image: url("../images/dk.jpg");
+     background-color: #c4b298;
+     background-repeat: no-repeat;
+     text-align: center;
+     text-decoration: none;
+     cursor: pointer;
+
+   }
+
+   .droplang-content {
+       display: none;
+       margin-top: 0px;
+       margin-right: -60px;
+       position: relative;
+       background-color: #c4b298;
+       border-style: solid;
+       border-width: 2px;
+       border-radius: 5px;
+
+       border-color: transparent;
+       box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+       z-index: 5;
+   }
+
+   .droplang-content a {
+     float: none;
+     display: block;
+     text-decoration: none;
+   }
+.droplang:hover{
+        opacity: 0.5;
+        }
+
+.show {display:block;}
+
+@media screen and (max-width: 920px) {
+
+  nav a, .dropdown img, .dropdown .droplang, .empty2 {
+    display: none;
+  }
+  nav a.icon {
+    position: relative;
+    margin-top: 15px;
+    float: right;
+    display: block;
+  }
+
+  #main-program {
+
+      margin: 0 auto;
+      text-align: center;
+
+  }
+
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
+
+
+}
+
+@media screen and (max-width: 920px) {
+
+
+
+  nav.responsive {position: relative;
+  background-color: #c4b298;}
+  nav.responsive .icon {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    margin: 20px 20px 0px 20px;
+    float: right;
+  }
+
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 20px 0 0 10px;
+
+  }
+  nav.responsive a.empty2{ display: none;}
+  nav.responsive .dropdown {float: none;}
+  nav.responsive .droplang-content {position: relative;}
+  nav.responsive, .dropdown, .dropdown img .dropdown .droplang {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+section{
+ width: 100%;
+ margin: 0px 0 0 0;
+ padding: 0;
+ min-height: 380px;
+ background-color: rgba(0,0,0,0.3);
+ background-image: url("../images/front_img.jpg");
+ background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.small{
+ width: 100%;
+ margin: 0px 0 0 0;
+ padding: 0;
+ min-height: 250px;
+ background-color: rgba(0,0,0,0.3);
+ background-image: url("../images/small_img.jpg");
+ background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.small h2{
+
+  font-size: 4.5vw;
+  padding-top: 150px;
+  letter-spacing: 1.2pt;
+
+}
+.small h3{
+  display: none;
+  }
+.intro{
+ width: 100%;
+ background-color: #710000;
+ margin: 0px 0 0 0;
+}
+.tekst_sp{
+  background-color: #710000;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+
+.sec {
+ width: 100%;
+ height: 500px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.program {
+ background-image: url("../images/program_front.jpg");
+ background-color: rgba(0,0,0,0.5);
+ background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.kort {
+  background-image: url("../images/kort_front.jpg");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.info {
+  background-image: url("../images/info_front.jpg");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+
+
+.event_left1 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.event_tekst1 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.event_tekst2 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.event_img_left {
+  background-image: url("../images/7kanten.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.event_img_middle {
+  background-image: url("../images/lopus-tempus.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.event_img_right {
+  background-image: url("../images/ml.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.event_text_left,.event_text_middle,.event_text_right{
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.seo_om_vmf {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.seo_om_vmf2 {
+ background-image: url("../images/om_vmf.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+
+.kortkontakt {
+ background-image: url("../images/konkort.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.frivillig {
+ background-image: url("../images/frivillig.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.aktor {
+ background-image: url("../images/mmm.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.praktiskinfo {
+  background-image: url("../images/praktiskinfo.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.omfestivalen {
+  background-image: url("../images/omfestivalen.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.knap1{
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #fff;
+    background-color: #6a802a;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 90px;
+}
+.knap1 a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.knap1 a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.knap1 a:hover {
+    text-decoration: none;
+
+    color: #c4b298;
+}
+
+.knap1 a:active {
+    text-decoration: none;
+}
+
+.rcorners1 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 9px;
+    width: 120px;
+}
+.rcorners2 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 9px;
+    width: 65px;
+}
+.rcorners3 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 9px;
+    width: 85px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  h1 {
+    font-family: augusta;
+    margin: auto;
+    font-size: 7vw;
+    padding: 150px 20px 0 20px;
+    letter-spacing: 1.2pt;
+    color: #fff;
+    text-align: center;
+    text-shadow: 00px 0px 80px #000000;
+  }
+
+  h2{
+    font-family: augusta;
+    margin: auto;
+    font-size: 6.5vw;
+    padding: 0px 20px 0 20px;
+    letter-spacing: 1.2pt;
+    color: #fff;
+    text-align: center;
+    text-shadow: 00px 0px 60px #000000;
+  }
+
+  h4{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 75px;
+  font-size: 5.5vw;
+  font-weight: 700;
+  letter-spacing: 0.75pt;
+  vertical-align:middle;
+  color: #fff;
+  }
+
+  .overskrift{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px 0px 0px 0px;
+    letter-spacing: 1.2pt;
+    line-height: 22pt;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .event_kasse1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+  .event_kasse1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+  }
+
+  .seo_om_vmf{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 220px;}
+
+  .indhold{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .program,
+  .kort,
+  .info{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 180px;
+    max-height: 180px;
+ }
+ .event_left1,
+ .event_right1,
+ .event_left2,
+ .event_right2,
+ .event_text_left,
+ .event_text_middle,
+ .event_text_right,
+ .event_tekst2,
+ .event_img_left,
+ .event_img_middle,
+ .event_img_right{
+   width: 100%;
+
+   min-height: 220px;
+ }
+ .event_img_left{ order: 1;
+ }
+ .event_text_left{order: 2;
+   margin-bottom: 20px;
+ }
+ .event_img_middle{ order: 3;
+ }
+ .event_text_middle{order: 4;
+   margin-bottom: 20px;
+ }
+ .event_img_right{order: 5;
+ }
+ .event_text_right{order: 6;
+   margin-bottom: 20px;
+ }
+
+
+
+ .info{
+   margin-left: 1%;
+ }
+ .event_left2{margin-top: 20px;}
+
+}
+footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin: 30px auto 00px auto;
+   padding: 20px 20px 0 20px;
+   background-color: #2d314e;
+   color: white;
+   text-align: center;
+}
+.socialmedier{
+  width: 100%;
+    text-decoration: none;
+  margin: 10px 0 10px 0;
+}
+
+.fb{
+  width: 60px;
+  padding: 5px;
+  margin-bottom: 2.3%;
+    text-decoration: none;
+}
+.ig{
+  width: 60px;
+  padding: 5px;
+    margin-bottom: 2.3%;
+    text-decoration: none;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 400.01px) and (max-width: 720px) {
+
+
+  .event_kasse1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  .event_kasse1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+  }
+  footer{
+    margin-top: 20px;
+    padding: 20px 20px 0 20px;
+  }
+  .overskrift{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-size: 30px;
+    padding: 20px 20px 10px 20px;
+    letter-spacing: 1.2pt;
+    line-height: 32pt;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .indhold{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .program,
+  .kort,
+  .info{
+    width: 32%;
+    height: 180px;
+    margin-top: 20px;
+    max-height: 180px;
+ }
+ .event_left1,
+ .event_right1,
+ .event_left2,
+ .event_right2,
+ .event_text_left,
+ .event_text_middle,
+ .event_text_right,
+ .event_tekst2,
+ .event_img_left,
+ .event_img_middle,
+ .event_img_right{
+   width: 100%;
+   min-height: 240px;
+ }
+ .event_img_left{ order: 1;
+ }
+ .event_text_left{order: 2;
+   margin-bottom: 20px;
+ }
+ .event_img_middle{ order: 3;
+ }
+ .event_text_middle{order: 4;
+   margin-bottom: 20px;
+ }
+ .event_img_right{order: 5;
+ }
+ .event_text_right{order: 6;
+   margin-bottom: 20px;
+ }
+ .info{
+   margin-left: 2%;
+ }
+ .program{
+   margin-right: 2%;
+ }
+ .event_left2{margin-top: 20px;}
+
+ .seo_om_vmf,.kortkontakt,.frivillig{
+   width: 100%;
+   margin-top: 20px;
+   padding: 20px;
+   min-height: 220px;}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 720.01px) {
+ .indhold {
+   padding-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: 0 auto;
+ }
+ .program,
+ .kort,
+ .info{
+   width: 32%;
+   height: 180px;
+   max-height: 180px;
+}
+.event_left1,
+.event_right1,
+.event_left2,
+.event_right2,
+.event_text_left,
+.event_text_middle,
+.event_text_right,
+.event_tekst2,
+.event_img_left,
+.event_img_middle,
+.event_img_right{
+  width: 32%;
+  min-height: 220px;
+}
+.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right{
+  margin-left: 2%;
+}
+.event_left{
+  margin-right: 2%;
+}
+.info{
+  margin-left: 2%;
+}
+.program{
+  margin-right: 2%;
+}
+.seo_om_vmf,.seo_om_vmf2,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
+.article1,.article2,.article3,.article4,.article_kasse2,.frivillig{
+  width: 50%;
+  min-height: 220px;}
+
+  #main-program {
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
+
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
+}
+
+
+
+   .program-background{
+   margin-top: 20px;
+    background-image:url("../images/boatatriverbed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-size: contain;
+   }
+
+   .top-program {
+     justify-content: center;
+     display:flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     width: 100%;
+   }
+
+   .top-program > div {
+     max-width: 13%;
+     min-width: 150px;
+     margin: 6px;
+     text-align: center;
+     font-size: 13px;
+   }
+
+   #fleredagsop{
+   }
+
+   .downbox{
+     background-color:#a19496;
+     min-height: 150px;
+     margin: 0.5%;
+     padding-bottom: 10px;
+   }
+
+   .downandwhite{
+     height: 50%;
+     margin-bottom: 0;
+     background-color: #a19496;
+   }
+
+   .downandgreen{
+     height: 50%;
+     padding-top: 10px;
+     margin-bottom: 0;
+     background-color: #667a29;
+     color: #ecf6f8;
+   }
+
+   .time-on-days {
+     display: flex;
+     width: 100%;
+     margin: auto;
+     flex-direction: column;
+}
+
+  .time-on-days > div {
+     background-color: #ecf6f8;
+     text-align: center;
+     width: 95%;
+     margin: 3%;
+     line-height: 100%;
+   }
+
+    .event-and-date {
+      display: flex;
+      flex-wrap: nowrap;
+}
+
+.time-frame{
+  font-size: 20px;
+  background-color: #667a29;
+  line-height: 100%;
+  max-width: 100px;
+  color: #ecf6f8;
+}
+
+.time-label{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup-info{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  background-color: #2e304f;
+  color: #a19496;
+}
+
+.popup-info2{
+  min-height: 100%;
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+
+.time-label .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0,5s;
+    animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*kort styles*/
+#kort1{
+width: 100%;
+margin: 0px 0 0 0;
+padding: 0;
+min-height: 680px;
+background-image: url("../images/kort1.jpg");
+background-blend-mode: darken;
+background-position: center;
+background-size: cover;
+cursor: zoom-in;
+}
+
+#kort2{
+width: 100%;
+min-height: 680px;
+background-image: url("../images/kort2.jpg");
+background-position: center;
+background-size: cover;
+cursor: zoom-in;
+}
+
+#kort3{
+width: 100%;
+min-height: 680px;
+background-image: url("../images/kort3.jpg");
+background-position: center;
+background-size: cover;
+cursor: zoom-in;
+}
+
+#kort4{
+width: 100%;
+min-height: 680px;
+background-image: url("../images/kort4.jpg");
+background-position: center;
+background-size: cover;
+cursor: zoom-in;
+}
+
+#kort5{
+width: 100%;
+min-height: 680px;
+background-image: url("../images/kort5.jpg");
+background-position: center;
+background-size: cover;
+cursor: zoom-out;
+
+}
+
+.semere{
+  height: 4%;
+  width: 90px;
+  position: absolute;
+  z-index: 4;
+  margin-left: 34.6%;
+  margin-top: -245px;
+}
+
+/*korttest*/
+
+  .img-zoom-container {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 80px;
+    height: 80px;
+  }
+
+  .img-zoom-result {
+    border: 1px solid black;
+    box-shadow: 00px 00px 30px #000000;
+    /*set the size of the result div:*/
+    width: 30%;
+    height: 60%;
+    margin-left: -0px;
+    margin-top: -49%;
+    position: absolute;
+  }
+
+  #kort {
+    background-repeat: no-repeat;
+  }
+
+.kortbrede{ width: 100%}
+
+
+   /*kontakt styles*/
+
+
+   #hvor{
+     height: 100%;
+     width: 100%;
+     background-image: url("../images/hvor.jpg");
+background-repeat: no-repeat;
+margin-left: 35%;
+   }
+
+.labelform > label{
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+
+   * {
+       box-sizing: border-box;
+   }
+
+   input[type=text], select, textarea {
+       width: 96.5%;
+       padding: 12px;
+       border: 1px solid #9b8368;
+       border-radius: 4px;
+       resize: vertical;
+   }
+
+
+
+
+
+   input[type=submit] {
+       background-color: #4CAF50;
+       color: white;
+       padding: 12px 20px;
+       border: none;
+       margin: 20px;
+       margin-right: 45%;
+       border-radius: 4px;
+       cursor: pointer;
+       text-align: center;
+   }
+
+   input[type=submit]:hover {
+       background-color: #45a049;
+
+   }
+
+
+   .col-25 {
+       float: left;
+       width: 25%;
+       margin-top: 6px;
+   }
+
+   .col-75 {
+       float: left;
+       width: 75%;
+       margin-top: 10px;
+   }
+
+   /* Clear floats after the columns */
+   .row:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+
+
+   /*All Articles*/
+
+   .article_kasse1{
+     font-family: 'Montserrat', sans-serif;
+     margin: auto;
+     font-size: 20px;
+     padding: 20px 0px 0px 20px;
+     letter-spacing: 1.2pt;
+     color: #000;
+     font-weight: 700;
+     text-align: left;
+}
+    .article1{
+      background-image: url("../images/7kanten.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .article2{
+      background-image: url("../images/lopus-tempus.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .article3{
+      background-image: url("../images/ml.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .article4{
+      background-image: url("../images/salgvedvandet.jpg");
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .article_kasse1 p{
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px 20px 30px 0;
+      font-weight: 300;
+      line-height: 14pt;
+      font-size:12px;
+    }
+
+    .article_kasse2{
+      font-family: 'Montserrat', sans-serif;
+      margin: auto;
+      font-size: 20px;
+      padding: 20px 0px 0px 20px;
+      letter-spacing: 1.2pt;
+      color: #000;
+      font-weight: 700;
+      text-align: left;
+      background-color: #ffffff;
+    }
+
+    .article_kasse2 p{
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px 20px 30px 0;
+      font-weight: 300;
+      line-height: 14pt;
+      font-size:12px;
+    }

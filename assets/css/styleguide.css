@@ -1,0 +1,1196 @@
+
+/*overordnet*/
+
+body {
+       font-family: Helvetica, Arial, sans-serif;
+       font-size: 12px;
+       margin-left: 5%;
+     }
+
+
+.op{
+  margin-top: 3px;
+}
+
+
+
+.overskrift{
+ margin-top: 80px;
+}
+
+
+
+#over {
+  margin-top: 90px;
+  font-size: 60px;
+}
+
+h6{
+  font-size: 35px;
+  font-weight: 100;
+  border-bottom: 2px solid black;
+  width: 95%;
+  padding-bottom: 5px;
+  padding-top: 100px;
+
+}
+
+b{
+  font-size: 14px;
+}
+
+
+
+pre{
+  text-decoration: none;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+
+/*flexi system*/
+.fff {
+display: flex;
+flex-direction: column;
+margin-right: 12%;
+max-width: 180px;
+display: inline-block;
+vertical-align: text-top;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*farver*/
+
+.Primarefarver, .Sekundarefarver{
+  margin-top: 20px;
+}
+
+.farvekode1{
+  height: 55px;
+  width: 120px;
+  background-color: #c4b298;
+}
+
+.farvekode2{
+  height: 55px;
+  width: 120px;
+  background-color: #710000;
+}
+
+.farvekode3{
+  height: 55px;
+  width: 120px;
+  background-color: #2D314E;
+}
+
+.farvekode4{
+  height: 55px;
+  width: 120px;
+  background-color: #667A29;
+}
+
+
+
+
+
+
+
+
+/*Skrifttyper*/
+
+#augusta{
+  font-family: augusta;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+#helveticat{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+#montserrat{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*knapper*/
+.rcorners2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px;
+    width: 65px;
+}
+
+
+
+/*knap 2*/
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*knapper*/
+
+/* Set a style for button login */
+
+button {
+  background-color: #70150e;
+  color: white;
+  padding: 12px 20px;
+  margin-top: px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* styles for the cancel button login*/
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #70150e;
+  border-radius: 4px;
+}
+
+#loginn{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*input felter*/
+
+.labelform > label{
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+
+  }
+
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      margin: 20px;
+      margin-right: 45%;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+  }
+
+
+  input[type=text], select, textarea {
+      width: 20%;
+      padding: 12px;
+      border: 1px solid #9b8368;
+      border-radius: 4px;
+      resize: vertical;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*menu*/
+
+  header{
+    height: 60px;
+    background-color: #c4b298;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+
+  #myNav{
+    margin-left: -70px;
+  }
+
+  .bgc{
+    background-color:  #c4b298;
+    height: 60px;
+    width: 95%;
+    margin-bottom: 150px;
+    margin-left: 0px;
+  }
+
+  .dropdown button{
+  border: none;
+  margin-top: 10px;
+  }
+
+  .empty2{
+   width: 10%;
+   background-color: transparent;
+   display: block;
+  }
+
+   .logo{
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     width: 93.5%;
+     z-index: 1;
+  }
+
+   .banner{
+     width: 135px;
+   }
+
+    nav {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      z-index: 2;
+    }
+
+    nav a {
+      display: block;
+      background-color: #c4b298;
+      color: #710000;
+      margin: 20px 20px 0px 20px;
+      height: 40px;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 1.3pt;
+    }
+
+
+
+
+
+
+
+/*footer*/
+footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.3pt;
+  line-height: 24pt;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 20px;
+  min-height: 80px;
+}
+
+.footer_tekst{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.klient {
+  background-color: #2d314e;
+  color: white;
+  padding: 12px 20px;
+  margin: 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  }
+
+  .fb{
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 2.3%;
+      text-decoration: none;
+  }
+
+  .ig{
+    width: 60px;
+    padding: 5px;
+      margin-bottom: 2.3%;
+      text-decoration: none;
+  }
+
+  .vardekommune{
+  width: 8%;
+  text-align: center;
+  margin-bottom: 15px;
+  }
+
+  footer {
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     margin: 30px auto 00px auto;
+     padding: 20px 20px 0 20px;
+     background-color: #2d314e;
+     color: white;
+     text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*del 1*/
+.indhold {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.seo_om_vmf {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.seo_om_vmf,.seo_om_vmf2,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,.article1,.article_kasse2{
+  width: 50%;
+  min-height: 220px;
+}
+
+  .event_kasse1{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-size: 30px;
+    padding: 20px 0px 0px 20px;
+    letter-spacing: 1.2pt;
+    color: #000;
+    font-weight: 700;
+    text-align: left;
+    padding: auto;
+  }
+  .event_kasse1 p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 20px 30px 0;
+    font-weight: 300;
+    line-height: 14pt;
+    font-size:12px;
+  }
+
+.praktiskinfo {
+  background-image: url("../images/praktiskinfo.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+
+
+
+
+/*del 2*/
+section{
+ width: 100%;
+ margin: 0px 0 0 0;
+ padding: 0;
+ min-height: 380px;
+ background-color: rgba(0,0,0,0.3);
+ background-image: url("../images/front_img.jpg");
+ background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.intro{
+ width: 100%;
+ background-color: #710000;
+ margin: 0px 0 0 0;
+}
+h1 {
+  font-family: augusta;
+  margin: auto;
+  font-size: 5.5vw;
+  padding-top: 150px;
+  letter-spacing: 1.2pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 00px 0px 80px #000000;
+  padding: auto;
+}
+h2{
+  font-family: augusta;
+  margin: auto;
+  font-size: 3.5vw;
+  padding-top: 0px;
+  letter-spacing: 1.2pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 00px 0px 60px #000000;
+  padding: auto;
+}
+h3{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+margin: 0px 0 0 0;
+padding: 30px 18% 30px 18% ;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.75pt;
+color: #fff;
+}
+
+
+
+
+
+
+
+
+/*del 3*/
+.indhold{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.program {
+ background-image: url("../images/program_front.jpg");
+ background-color: rgba(0,0,0,0.5);
+ background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.kort {
+  background-image: url("../images/kort_front.jpg");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+.info {
+  background-image: url("../images/info_front.jpg");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+ background-position: center;
+ background-size: cover;
+}
+
+.program,
+.kort,
+.info{
+  width: 32%;
+  height: 180px;
+  max-height: 180px;
+}
+.info{
+ margin-left: 2%;
+}
+.program{
+ margin-right: 2%;
+}
+
+h4{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+margin-top: 75px;
+font-size: 2.5vw;
+font-weight: 700;
+letter-spacing: 0.75pt;
+vertical-align:middle;
+color: #fff;
+}
+h4 a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+h4 a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+h4 a:hover {
+    text-decoration: none;
+    color: #c4b298;
+}
+
+h4 a:active {
+    text-decoration: none;
+}
+
+
+
+
+
+/*del 4*/
+.indhold{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.event_left1 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.event_tekst1 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.event_tekst2 {
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+.event_img_left {
+  background-image: url("../images/7kanten.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.event_img_middle {
+  background-image: url("../images/lopus-tempus.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.event_img_right {
+  background-image: url("../images/ml.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.event_text_left,.event_text_middle,.event_text_right{
+  background-color:#fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.event_left1,
+.event_right1,
+.event_left2,
+.event_right2,
+.event_text_left,
+.event_text_middle,
+.event_text_right,
+.event_tekst2,
+.event_img_left,
+.event_img_middle,
+.event_img_right{
+  width: 32%;
+  min-height: 220px;
+}
+.rcorners1 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px;
+    width: 120px;
+}
+.rcorners2 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px;
+    width: 65px;
+}
+.rcorners3 {
+  margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px;
+    width: 85px;
+}
+.event_kasse1{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  font-size: 30px;
+  padding: 20px 0px 0px 20px;
+  letter-spacing: 1.2pt;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+  padding: auto;
+}
+.event_kasse1 p{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 20px 30px 0;
+  font-weight: 300;
+  line-height: 14pt;
+  font-size:12px;
+}
+
+.event_kasse2{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  font-size: 30px;
+  padding: 20px 0px 0px 20px;
+  letter-spacing: 1.2pt;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+  padding: auto;
+}
+.event_kasse2 p{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 20px 30px 0;
+  font-weight: 300;
+  line-height: 14pt;
+  font-size:12px;
+
+}
+.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right{
+  margin-left: 2%;
+}
+.event_left{
+  margin-right: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* Set a style for all buttons */
+
+button {
+  background-color: #70150e;
+  color: white;
+  padding: 14px 20px;
+  margin: 0px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #70150e;
+  border-radius: 4px;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 16%;
+  border-radius: 0%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: #C4B298;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*program*/
+@media only screen and (min-width: 720.01px) {
+ .indhold {
+   padding-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: 0 auto;
+ }
+ .program,
+ .kort,
+ .info{
+   width: 32%;
+   height: 180px;
+   max-height: 180px;
+}
+.event_left1,
+.event_right1,
+.event_left2,
+.event_right2,
+.event_text_left,
+.event_text_middle,
+.event_text_right,
+.event_tekst2,
+.event_img_left,
+.event_img_middle,
+.event_img_right{
+  width: 32%;
+  min-height: 220px;
+}
+.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right{
+  margin-left: 2%;
+}
+.event_left{
+  margin-right: 2%;
+}
+.info{
+  margin-left: 2%;
+}
+.program{
+  margin-right: 2%;
+}
+.seo_om_vmf,.seo_om_vmf2,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
+.article1,.article2,.article3,.article4,.article_kasse2{
+  width: 50%;
+  min-height: 220px;}
+
+  #main-program {
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
+
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
+}
+
+
+
+   .program-background{
+   margin-top: 20px;
+    background-image:url("../images/boatatriverbed.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-size: contain;
+   }
+
+   .top-program {
+     justify-content: center;
+     display:flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     width: 100%;
+
+
+   }
+
+   .top-program > div {
+     max-width: 13%;
+     min-width: 150px;
+     margin: 6px;
+     text-align: center;
+
+     font-size: 13px;
+   }
+   #fleredagsop{
+
+   }
+   .downbox{
+     background-color:#a19496;
+     min-height: 150px;
+     margin: 0.5%;
+     padding-bottom: 10px;
+
+   }
+   .downandwhite{
+     height: 50%;
+     margin-bottom: 0;
+     background-color: #a19496;
+
+   }
+   .downandgreen{
+     height: 50%;
+     padding-top: 10px;
+     margin-bottom: 0;
+     background-color: #667a29;
+     color: #ecf6f8;
+   }
+
+
+   .time-on-days {
+     display: flex;
+     width: 100%;
+     margin: auto;
+     flex-direction: column;
+}
+
+  .time-on-days > div {
+     background-color: #ecf6f8;
+     text-align: center;
+     width: 95%;
+     margin: 3%;
+     line-height: 100%;
+
+   }
+    .event-and-date {
+
+      display: flex;
+      flex-wrap: nowrap;
+}
+
+.time-frame{
+  font-size: 20px;
+  background-color: #667a29;
+  line-height: 100%;
+  max-width: 100px;
+  color: #ecf6f8;
+}
+.time-label{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup-info{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  background-color: #2e304f;
+  color: #a19496;
+}
+
+.popup-info2{
+  display: inline-block;
+  width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  margin-left: -50%;
+
+}
+
+.time-label .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0,5s;
+    animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (max-width: 920px) {
+
+  nav a, .dropdown img, .dropdown .droplang, .empty2 {
+    display: none;
+  }
+  nav a.icon {
+    position: relative;
+    margin-top: 15px;
+    float: right;
+    display: block;
+  }
+
+  #main-program {
+
+      margin: 0 auto;
+      text-align: center;
+
+  }
+
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
+#block11{
+  margin-left: -250px;
+  margin-top: 20px;
+}
+
+.htmllogin{
+    margin-left: -240px;
+    margin-top: 50px;
+}

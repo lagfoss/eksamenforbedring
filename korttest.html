@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Varde Middelalderfestival - Handelsruten til omverdenen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MMD 2. semester eksamensprojekt gruppe 14">
+  <meta name="description" content="I middelaldrende var Varde købstad, toldsted og tingsted, dette
+  er en oplagt mulighed for at skabe en historie, der inddrager udenlandske handelsmænd, egnens rådmænd, den lokale
+   borgmester og byfogeden, som omhandler det frie årsmarked" />
+  <meta name="keywords" content="Varde, Middelalderfestival, Varde Å, købstad, toldsted, tingsted, 1442, handel, omverdenen" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+  <script>
+    function imageZoom(stortkort, resultatkort) {
+      var img, lens, result, cx, cy;
+      img = document.getElementById(stortkort);
+      result = document.getElementById(resultatkort);
+
+
+
+/*dragoverfirkant*/
+      /*her laves dragoverfirkant*/
+      lens = document.createElement("DIV");
+      lens.setAttribute("class", "img-zoom-lens");
+
+      /*her indsættes og vises dagoverfirkanen på skærmen*/
+      img.parentElement.insertBefore(lens, img);
+
+
+/*resultatkort*/
+      /*her beregnes forholdet mellem resultatkortet og dragover firkanten*/
+      cx = result.offsetWidth / lens.offsetWidth;
+      cy = result.offsetHeight / lens.offsetHeight;
+
+      /*her vises resultat fra dragoverfirkant i resultatkort*/
+      result.style.backgroundImage = "url('" + img.src + "')";
+      result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+
+
+
+/*eventlistendner*/
+      /*dragoverfirkant og resultetkort funktion skal vises ved dragover*/
+      lens.addEventListener("mousemove", moveLens);
+      img.addEventListener("mousemove", moveLens);
+
+      /*samme for touchskærme*/
+      lens.addEventListener("touchmove", moveLens);
+      img.addEventListener("touchmove", moveLens);
+
+
+
+
+function moveLens(e) {
+        var pos, x, y;
+
+        /*forhindre eventuelle andre handlinger, der kan opstå, når du flytter musen over billedet:*/
+        e.preventDefault();
+        /*her fås musens x og y position når man holder musen over*/
+        pos = getCursorPos(e);
+
+        /*beregning af positionen af lensen (dragover firkenten)*/
+        x = pos.x - (lens.offsetWidth / 2);
+        y = pos.y - (lens.offsetHeight / 2);
+
+
+
+
+        /*her sættes positionen af lensen (dragover firkenten)*/
+        lens.style.left = x + "px";
+        lens.style.top = y + "px";
+
+        /*Vis hvad lensen (dragoverfirkanten) ser*/
+        result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+      }
+
+
+
+
+  function getCursorPos(e) {
+        var a, x = 0,
+          y = 0;
+        e = e || window.event;
+
+        /*her fås x og y positioner af det store kort*/
+        a = img.getBoundingClientRect();
+
+        /*Her beregnes musens x og y koordinater i forhold til det store kort*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+
+        /*her overvejes hver side scrollin / eller måske position?*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {
+          x: x,
+          y: y
+        };
+      }
+    }
+  </script>
+
+
+
+
+
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img class="banner" src="assets/images/logo.png" alt="Varde Middelalderfestival banner"></a>
+    </div>
+    <nav id="myNav">
+      <a href="javascript:void();" style="font-size:20px;" class="icon" onclick="responsiveNav()">&#9776;</a>
+      <a href="program.html">Program</a>
+      <a href="omfestivalen.html">Om festivalen</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+      <a href="index.html" class="empty2"></a>
+      <a href="blivaktor.html">Bliv aktør</a>
+      <a href="blivfrivillig.html">Bliv frivillig</a>
+      <a href="kontakt.html">Kontakt</a>
+      <div class="dropdown">
+        <button onclick="Language()" class="droplang"></button>
+        <div id="myLanguage" class="droplang-content">
+          <a href="#dk"><img src="assets/images/dk.png" alt="Danish language"/></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <main>
+    <div class="img-zoom-container">
+      <a href="kort5.html">
+      <img id="kort" class="kortbrede" src="assets/images/kort3k.jpg" alt="Kort over Varde Middelalderfestival">
+      <div id="myresult" class="img-zoom-result"></div></a>
+    </div>
+
+
+  </main>
+
+  <script>
+    // Initiate zoom effect:
+    imageZoom("kort", "myresult");
+  </script>
+
+
+  <footer><div class="footer_tekst">
+Varde Kommune  -
+Bytoften 2  -
+6800 Varde  -
+79 94 68 00  -
+
+vardekommune@varde.dk  -
+
+CVR-nr: 2918 9811  </div>
+
+<button class="klient" onclick="window.location.href='login.html'" style="width:auto;">Log ind på klientside</button>
+
+
+<div class="socialmedier">
+  <a target="_blank" href="https://www.facebook.com/kulturugen/"><img class="fb" src="assets/images/facebook.png" alt="Varde facebook"> </a>
+  <a target="_blank" href="http://www.vardekommune.dk"> <img class="vardekommune" src="assets/images/vk_logo.png" alt=""> </a>
+  <a target="_blank" href="https://www.instagram.com/explore/tags/viinaturen/"><img class="ig" src="assets/images/instagram.png" alt="Varde Instagram"> </a>
+</div>
+
+  </footer>
+
+</body>
+
+</html>

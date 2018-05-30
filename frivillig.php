@@ -12,7 +12,7 @@ if (isset($_POST['submit'])){
   $txt = "Du har modtaget en mail fra ".$name.".\n\n".$subject;
 
   mail($mailTo, $subject, $txt, $headers);
-  header("Location:takkontakt.html");
+  header("Location:tak.html");
 }
 
 ?>

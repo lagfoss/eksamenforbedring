@@ -32,21 +32,23 @@
 
     <form class="login-box animate">
 
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required/>
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required/>
 
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required/>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required/>
 
-        <input type="submit" class="sub" onclick="window.location.href='klient.html'" value="Login"/>
+      <input type="submit" value="LOGIN" onclick="check()"/>
+      <div>
         <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
         <button type="button" onclick="window.location.href='index.html'" class="cancelbtn">Gå tilbage</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
     </form>
 </main>
-
+onclick="window.location.href='klient.html'"
 </body>
 
 </html>

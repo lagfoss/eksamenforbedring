@@ -62,25 +62,19 @@
             Det skal gerne være så autentisk som muligt.
             Det er helt gratis at sætte en bod op og i får fortjenesten for jer selv til jeres forening eller klub<br>
               </p>
+              <form action="aktorform.php" method="post" name="Bliv Aktør">
 
-            <form class="labelform"     action="mailto:sofie_feldborg@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">
+                <div class="label">Dit navn</div>
+                <input type="text" name="navn" placeholder="Skriv dit fulde navn her..." required>
 
-              <label >Titel på din/ jeres bod, event eller stand</label>
-              <input type="text" required>
+                <div class="label">Din Email</div>
+                <input type="text" name="email" placeholder="Din Email..." required>
 
-              <label>Kort beskrivelse af det du vil lave</label>
-              <textarea name="VisitorComment" rows="4" cols="70"></textarea>
+                <div class="label">Besked</div>
+                <textarea type="text" name="besked" placeholder="Skriv din besked her..." required></textarea>
 
-              <label>Artikel til hjemmesiden</label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
-
-              <label> Tidspunkt og antal dage du kan være på pladsen </label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
-
-              <div><input type="submit"  value="Tilføj billede"></div>
-
-              <div><input type="submit" value="Send"></div>
-          </form>
+                <button class="knap1" border="none" type="submit" name="submit">Send Besked</button>
+              </form>
 
       </div>
 

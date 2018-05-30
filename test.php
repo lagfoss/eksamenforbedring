@@ -1,3 +1,3 @@
 <?php
-mail("lagfoss@gmail.com", "Test!", "Hello, there!");
+mail("thomasandersen119@gmail.com", "Test!", "Hello, there!");
 ?>

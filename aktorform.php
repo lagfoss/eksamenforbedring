@@ -1,11 +1,9 @@
-
 <?php
 
 if (isset($_POST['submit'])){
   $name = $_POST['navn'];
   $subject = $_POST['besked'];
   $mailFrom = $_POST['email'];
-  $image = $_POST["fileUpload"];
 
 
 
@@ -13,7 +11,7 @@ if (isset($_POST['submit'])){
   $headers = "From: ".$mailFrom;
   $txt = "Du har modtaget en mail fra ".$name.".\n\n".$subject;
 
-  mail($mailTo, $subject, $txt, $headers,);
+  mail($mailTo, $subject, $txt, $headers);
   header("Location:send.html?mailsend");
 }
 

@@ -42,15 +42,6 @@ Colors:
     11.0 - Wordpress Required
     */
 
-
-/*
- * Fonts
- */
-	/* @import url('fonts/fonts.css'); */
-
-
-
-
   /*
    * 1.0 Global
    */
@@ -1163,13 +1154,19 @@ background-repeat: no-repeat;
 margin-left: 35%;
    }
 
+.label{
+  font-size: 13px;
+  margin: 20px 0 5px 0;
+}
+
+/*
 .labelform > label{
-  font-size: 18px;
+  font-size: 8px;
   margin-top: 30px;
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-
+*/
 
 
    * {
@@ -1193,7 +1190,7 @@ margin-left: 35%;
        color: white;
        padding: 12px 20px;
        border: none;
-       margin: 20px;
+       margin: 20px 0 20px 0;
        margin-right: 45%;
        border-radius: 4px;
        cursor: pointer;

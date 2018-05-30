@@ -72,13 +72,16 @@
               <br>
             </p>
 
-          <form action="mailto:............." method="POST" enctype="multipart/form-data" name="EmailTestForm">
+          <form action="kontakt.php" method="post" name="Kontakt formular">
 
-            <label>Dit navn</label>
-            <input type="text">
+            <div class="label">Dit navn</div>
+            <input type="text" name="navn" placeholder="Skriv dit fulde navn her...">
 
-            <label>Besked</label>
-            <input type="text">
+            <div class="label">Din Email</div>
+            <input type="text" name="email" placeholder="Din Email...">
+
+            <div class="label">Besked</div>
+            <input type="text" name="besked" placeholder="Skriv din besked her...">
 
             <input type="submit" value="Send">
           </form>

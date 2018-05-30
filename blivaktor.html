@@ -66,19 +66,19 @@
             <form class="aktorform.php" method="POST" name="Bliv aktør">
 
               <div class="label">Titel på din/ jeres bod, event eller stand</div>
-              <input type="text" required>
+              <input type="text" name="navn" placeholder="Skriv jeres navn her..." required>
 
               <div class="label">Kort beskrivelse af det du vil lave</div>
-              <textarea name="VisitorComment"></textarea>
+              <textarea type="text" name="beskrivelse" placeholder="Beskrivelse her..."></textarea>
 
               <div class="label">Artikel til hjemmesiden</div>
-              <textarea name="VisitorComment"  required></textarea>
+              <textarea type="text" name="artikel" placeholder="Skriv jeres artikel her..." required></textarea>
 
-              <div class="label"> Tidspunkt og antal dage du kan være på pladsen </div>
-              <textarea name="VisitorComment"  required></textarea>
+              <div class="label">Jeres Email</div>
+              <input type="text" name="email" placeholder="Email..." required>
 
               <div class="label"><input type="file" name="fileUpload"></div>
-              <button class="knap1" border="none" type="submit" name="submit">Send Besked</button>
+              <button class="knap1" border="none" type="submit" name="submit">Send</button>
           </form>
 
       </div>

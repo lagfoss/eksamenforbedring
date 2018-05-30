@@ -63,23 +63,22 @@
             Det er helt gratis at sætte en bod op og i får fortjenesten for jer selv til jeres forening eller klub<br>
               </p>
 
-            <form class="labelform"     action="mailto:sofie_feldborg@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">
+            <form class="aktorform.php" method="POST" name="Bliv aktør">
 
-              <label >Titel på din/ jeres bod, event eller stand</label>
+              <div class="label">Titel på din/ jeres bod, event eller stand</div>
               <input type="text" required>
 
-              <label>Kort beskrivelse af det du vil lave</label>
-              <textarea name="VisitorComment" rows="4" cols="70"></textarea>
+              <div class="label">Kort beskrivelse af det du vil lave</div>
+              <textarea name="VisitorComment"></textarea>
 
-              <label>Artikel til hjemmesiden</label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
+              <div class="label">Artikel til hjemmesiden</div>
+              <textarea name="VisitorComment"  required></textarea>
 
-              <label> Tidspunkt og antal dage du kan være på pladsen </label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
+              <div class="label"> Tidspunkt og antal dage du kan være på pladsen </div>
+              <textarea name="VisitorComment"  required></textarea>
 
-              <div><input type="submit"  value="Tilføj billede"></div>
-
-              <div><input type="submit" value="Send"></div>
+              <div class="label"><input type="file" name="fileUpload"></div>
+              <button class="knap1" border="none" type="submit" name="submit">Send Besked</button>
           </form>
 
       </div>

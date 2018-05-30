@@ -13,7 +13,7 @@ if (isset($_POST['submit'])){
   $headers = "From: ".$mailFrom;
   $txt = "Du har modtaget en mail fra ".$name.".\n\n".$subject;
 
-  mail($mailTo, $subject, $txt, $headers, $image);
+  mail($mailTo, $subject, $txt, $headers,);
   header("Location:send.html?mailsend");
 }
 

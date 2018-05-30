@@ -59,22 +59,19 @@
           <p>Kom og lær en masse andre mennesker at kende, få en autentisk og lærerig oplevese, samt erfaring på dit CV<br>
               </p>
 
-            <form class="labelform"     action="mailto:sofie_feldborg@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">
+              <form action="frivillig.php" method="post" name="Bliv frivillig">
 
-              <label >Dit navn</label>
-              <input type="text" required>
+                <div class="label">Dit navn</div>
+                <input type="text" name="navn" placeholder="Skriv dit fulde navn her..." required>
 
-              <label>Din alder</label>
-              <textarea name="VisitorComment" rows="4" cols="70"></textarea>
+                <div class="label">Din Email</div>
+                <input type="text" name="email" placeholder="Din Email..." required>
 
-              <label>Mail og telefonnummer</label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
+                <div class="label">hvilke dage kan du komme? </div>
+                <input type="text" name="besked" placeholder="F.eks 23/07/2019" required></input>
 
-              <label>hvilke dage kan du komme? </label>
-              <textarea name="VisitorComment" rows="4" cols="70" required></textarea>
-
-              <div><input type="submit" value="Send tilmelding"></div>
-          </form>
+                <button class="knap1" border="none" type="submit" name="submit">Send</button>
+              </form>
 
       </div>
 

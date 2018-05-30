@@ -1183,10 +1183,6 @@ margin-left: 35%;
        resize: vertical;
    }
 
-
-
-
-
    input[type=submit] {
        background-color: #4CAF50;
        color: white;
@@ -1287,14 +1283,12 @@ margin-left: 35%;
       font-size:12px;
     }
 
-    /* Modal Content/Box */
+    /* Login Box */
 
-    .modal-content {
+    .login-box {
       background-color: #C4B298;
-      margin: 5% auto 15% auto;
-      /* 5% from the top, 15% from the bottom and centered */
-      border: 1px solid #888;
-      width: 30%;
+      margin: 150px auto auto auto;
+      width: 40%;
       /* Could be more or less, depending on screen size */
     }
 

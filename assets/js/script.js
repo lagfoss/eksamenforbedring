@@ -50,8 +50,24 @@ window.onclick = function(event) {
   }
 }
 
+function check() {
+  //stored data
+  localStorage.userName = "admin";
+  localStorage.userPw = "admin";
+  var storedName = localStorage.getItem('userName');
+  var storedPassword = localStorage.getItem('userPw');
 
+  //entered data from login
+  var userName = document.querySelector('#userName');
+  var userPassword = document.querySelector('#userPw');
 
+  //check if stored data from signup is equal to data from loginbutton
+  if(userName.value == storedName && userPw.value == storedPassword) {
+    window.location = window.location.href.replace("login.html","klient.html");
+  }else {
+    alert('Incorrect email or password');
+  }
+}
 
 
 

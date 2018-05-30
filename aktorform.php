@@ -10,7 +10,7 @@ if (isset($_POST['submit'])){
 
   $mailTo = "lagfoss@gmail.com";
   $headers = "From: ".$mailFrom;
-  $txt = "Du har modtaget en mail fra ".$name.".\n\n""Beskrivelse: ".$subject.".\n\n""Artikel:".$subject2;
+  $txt = "Du har modtaget en mail fra ".$name.".\n\n".$subject.".\n\n".$subject2;
 
   mail($mailTo, $subject, $txt, $headers);
   header("Location:send.html?mailsend");

@@ -897,7 +897,6 @@ input[type=file]{
 /* Tablet Styles */
 @media only screen and (min-width: 420px) and (max-width: 719px) {
 
-
   .event_kasse1{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -1038,6 +1037,7 @@ input[type=file]{
      margin-bottom: 20px;
 
      }
+
    .fb{
      margin: auto;
      margin: 10px;

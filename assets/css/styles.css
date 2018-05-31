@@ -643,6 +643,10 @@ section{
     text-decoration: none;
 }
 
+input[type=file]{
+  display: none;
+}
+
 .knap_all{
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;

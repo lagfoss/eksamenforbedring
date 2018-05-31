@@ -138,7 +138,7 @@ footer{
 .event_kasse1{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
-  font-size: 30px;
+  font-size: 24px;
   padding: 20px 0px 0px 20px;
   letter-spacing: 1.2pt;
   color: #000;
@@ -727,7 +727,7 @@ input[type=file]{
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 419px) {
 
 
 
@@ -893,15 +893,9 @@ input[type=file]{
      text-decoration: none;
      color: #fff;
  }
-
-
-
 }
-
-
-
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 719px) {
+@media only screen and (min-width: 420px) and (max-width: 719px) {
 
 
   .event_kasse1{

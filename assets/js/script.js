@@ -63,9 +63,9 @@ function check() {
 
   //check if stored data from signup is equal to data from loginbutton
   if(userName.value == storedName && userPw.value == storedPassword) {
-    window.location = window.location.href.replace("login.html","klient.html");
-    alert();
-  }else {
+    window.location = window.location.href.replace("login.html", "klient.html");
+    alert('');
+  } else {
     alert('Incorrect email or password');
   }
 }

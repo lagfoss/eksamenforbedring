@@ -538,6 +538,11 @@ section{
  background-position: center;
  background-size: cover;
 }
+.soundcloud {
+ background-image: url("../images/soundcloud.jpg");
+ background-position: center;
+ background-size: cover;
+}
 
 
 .kortkontakt {
@@ -936,7 +941,7 @@ flex: 1;
   margin-right: 2%;
 }
 .seo_om_vmf,.seo_om_vmf2,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
-.article1,.article2,.article3,.article4,.article_kasse2,.frivillig{
+.article1,.article2,.article3,.article4,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;}
 

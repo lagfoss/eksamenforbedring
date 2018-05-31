@@ -55,29 +55,25 @@
     <!-- Seo 1 -->
     <div class="seo_om_vmf">
 
-      <div class="event_kasse1"> Tilføj en artikkel
+      <div class="event_kasse1"> Tilføj en artikel
 
-          <form action="mailto:sofie_feldborg@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">
+          <form action="overblikartikler.html" method="post">
 
             <p>Titel bod, event eller stand</p>
-            <textarea name="VisitorComment" rows="2" cols="70"></textarea>
+            <input id="Title" type="text" autofocus required/>
 
             <p>Kort beskrivelse</p>
-            <textarea name="VisitorComment" rows="4" cols="70"></textarea>
+            <textarea id="Descrip" rows="4" cols="70" required></textarea>
 
             <p>
               Artikel tekst</p>
-            <textarea name="VisitorComment" rows="4" cols="70"></textarea>
+            <textarea id="Content" rows="4" cols="70" required></textarea>
 
             <p> Tidspunkt og antal dage </p>
-            <textarea name="VisitorComment" rows="4" cols="70"></textarea>
-
-            <p> Billed fil </p>
-            <textarea name="VisitorComment" rows="2" cols="70"></textarea>
+            <input type="text" id="Time" required/>
 
             <div><input type="submit" value="Tilføj billede"></div>
-            <div><input type="submit" value="Tilføj placering"></div>
-            <div><input type="submit" value=" Færdig"></div>
+            <div><input class="knap1" onclick="store()" value="OPLOAD ARTIKEL" type="submit"/></div>
           </form>
       </div>
 

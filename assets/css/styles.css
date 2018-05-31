@@ -885,6 +885,12 @@ flex: 1;
    padding: 20px;
    min-height: 220px;}
 
+   .login-box {
+     margin: 150px auto auto auto;
+     width: 100%;
+     display: block;
+   }
+
 }
 
 /* Desktop Styles */
@@ -1228,23 +1234,7 @@ margin-left: 35%;
        border-radius: 4px;
        resize: vertical;
    }
-
-   input[type=submit] {
-       background-color: #4CAF50;
-       color: white;
-       padding: 12px 20px;
-       border: none;
-       margin: 20px 0 20px 0;
-       margin-right: 45%;
-       border-radius: 4px;
-       cursor: pointer;
-       text-align: center;
-   }
-
-   input[type=submit]:hover {
-       background-color: #45a049;
-
-   }
+   input[type=password] { margin-bottom: 10px;}
 
 
    .col-25 {
@@ -1335,7 +1325,6 @@ margin-left: 35%;
       background-color: #C4B298;
       margin: 150px auto auto auto;
       width: 40%;
-      /* Could be more or less, depending on screen size */
     }
 
     /* Add Zoom Animation */
@@ -1360,17 +1349,5 @@ margin-left: 35%;
       }
       to {
         transform: scale(1)
-      }
-    }
-
-    /* Change styles for span and cancel button on extra small screens */
-
-    @media screen and (max-width: 300px) {
-      span.psw {
-        display: block;
-        float: none;
-      }
-      .cancelbtn {
-        width: 100%;
       }
     }

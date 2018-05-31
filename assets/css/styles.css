@@ -134,17 +134,6 @@ footer{
   font-weight: 700;
   text-align: center;
 }
-.overskrift_left{
-  font-family: 'Montserrat', sans-serif;
-  margin: auto;
-  font-size: 40px;
-  padding: 150px 20px 0px 10%;
-  letter-spacing: 1.2pt;
-  line-height: 44pt;
-  color: #fff;
-  font-weight: 700;
-  text-align: left;
-}
 
 .event_kasse1{
   font-family: 'Montserrat', sans-serif;
@@ -453,8 +442,22 @@ section{
 
 }
 .small h3{
-  display: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-size: 40px;
+    padding: 150px 20px 0px 10%;
+    letter-spacing: 1.2pt;
+    line-height: 44pt;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+
   }
+.small h5{
+  display: none;
+}
+
+
 .intro{
  width: 100%;
  background-color: #710000;

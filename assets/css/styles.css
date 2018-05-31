@@ -948,7 +948,7 @@ section{
 
    min-height: 220px;
  }
- 
+
  .event_img_left{ order: 1;
  }
  .event_text_left{order: 2;
@@ -986,7 +986,7 @@ section{
  }
  .event_left2{margin-top: 20px;}
 
- .seo_om_vmf,.kortkontakt,.frivillig{
+ .seo_om_vmf,.seo_om_vmf2,.kortkontakt,.frivillig{
    width: 100%;
    margin-top: 20px;
    padding: 20px;

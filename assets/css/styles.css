@@ -729,7 +729,10 @@ input[type=file]{
 /* Mobile Styles */
 @media only screen and (max-width: 419px) {
 
-
+  .label{
+    font-size: 13px;
+    margin: 20px 0 5px 0;
+  }
 
   h1 {
     font-family: augusta;
@@ -864,7 +867,7 @@ input[type=file]{
  .event_left2{margin-top: 20px;}
 
  footer {
-
+margin-top: 20px;
     width: 100%;
     background-color: #2d314e;
     color: white;
@@ -896,6 +899,11 @@ input[type=file]{
 }
 /* Tablet Styles */
 @media only screen and (min-width: 420px) and (max-width: 719px) {
+
+  .label{
+    font-size: 13px;
+    margin: 20px 0 5px 0;
+  }
 
   .event_kasse1{
     font-family: 'Montserrat', sans-serif;
@@ -1054,6 +1062,10 @@ input[type=file]{
 /* Desktop Styles */
 @media only screen and (min-width: 720px) {
 
+.event_kasse2{
+  padding-top: 50px;
+}
+
   footer {
      left: 0;
      bottom: 0;
@@ -1064,6 +1076,7 @@ input[type=file]{
      color: white;
      text-align: center;
   }
+
 
   .socialmedier{
     width: 200px;
@@ -1140,19 +1153,9 @@ input[type=file]{
   width: 50%;
   min-height: 220px;}
 
-  #main-program {
-      width: 95%;
-      margin: 0 auto;
-      text-align: center;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-  }
 
-  #main-program div {
-      -webkit-flex: 1;  /* Safari 6.1+ */
-      -ms-flex: 1;  /* IE 10 */
-      flex: 1;
-  }
+}
+
 
 .knappodcasti{
       border-radius: 5px;
@@ -1185,6 +1188,21 @@ input[type=file]{
 
   .knappodcasti a:active {
       text-decoration: none;
+  }
+
+
+  #main-program {
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
+
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
   }
 
 

@@ -83,3 +83,7 @@ function store() {
   localStorage.setItem('content', content.value);
   localStorage.setItem('time', time.value);
 }
+
+document.querySelector('#title').innerHTML = localStorage.getItem("title");
+document.querySelector('#descrip').innerHTML = localStorage.getItem("descrip");
+document.querySelector('#content').innerHTML = localStorage.getItem("content");

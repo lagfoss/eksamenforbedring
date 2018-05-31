@@ -623,7 +623,7 @@ section{
     border: 0px;
     text-transform: uppercase;
     font-size: 9px;
-    margin-top:20px;
+
     color: #fff;
     background-color: #6a802a;
     padding: 12px;
@@ -792,6 +792,10 @@ section{
  .event_text_right{order: 6;
    margin-bottom: 20px;
  }
+ .knap_all{
+     order: 7;
+
+ }
 
 
 
@@ -845,10 +849,9 @@ flex: 1;
     text-decoration: none;
 }
 .ig{
-  width: 10.3%;;
-  min-width: 36px;
-  padding-bottom: 0.8%;
-    text-decoration: none;
+  width: 12%;
+  min-width: 39px;
+  text-decoration: none;
 }
 
 /* Tablet Styles */

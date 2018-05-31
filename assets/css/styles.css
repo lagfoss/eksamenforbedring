@@ -522,6 +522,27 @@ section{
  background-position: center;
  background-size: cover;
 }
+
+.event_img_frugt {
+  background-image: url("../images/7kanten.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+.event_img_larer {
+  background-image: url("../images/soundcloud.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.event_img_snobrod {
+  background-image: url("../images/ml.jpg");
+ background-position: center;
+ background-size: cover;
+}
+
+
+
+
 .event_text_left,.event_text_middle,.event_text_right{
   background-color:#fff;
   background-position: center;
@@ -727,7 +748,10 @@ section{
  .event_tekst2,
  .event_img_left,
  .event_img_middle,
- .event_img_right{
+ .event_img_right
+ .event_img_frugt
+ .event_img_larer
+ .event_img_snobrod{
    width: 100%;
 
    min-height: 220px;
@@ -747,6 +771,7 @@ section{
  .event_text_right{order: 6;
    margin-bottom: 20px;
  }
+
 
 
 
@@ -1293,7 +1318,6 @@ margin-left: 35%;
       background-image: url("../images/salgvedvandet.jpg");
       background-position: center;
       background-size: cover;
-
     }
 
     .article_kasse1 p{

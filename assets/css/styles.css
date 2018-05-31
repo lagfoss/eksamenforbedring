@@ -118,7 +118,8 @@ footer{
 }
 
 .footer_tekst{
-  width: 100%;
+  width: 70%;
+  margin:auto;
   margin-bottom: 10px;
 }
 
@@ -541,8 +542,6 @@ section{
 }
 
 
-
-
 .event_text_left,.event_text_middle,.event_text_right{
   background-color:#fff;
   background-position: center;
@@ -706,8 +705,13 @@ section{
     width: 85px;
 }
 
+
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+
+
 
   h1 {
     font-family: augusta;
@@ -783,6 +787,13 @@ section{
     height: 180px;
     max-height: 180px;
  }
+ .footer_left,
+ .footer_middle,
+ .footer_right{
+   width: 100%;
+   margin: 10px 0 10px 0;
+
+}
  .event_left1,
  .event_right1,
  .event_left2,
@@ -793,9 +804,9 @@ section{
  .event_tekst2,
  .event_img_left,
  .event_img_middle,
- .event_img_right
- .event_img_frugt
- .event_img_larer
+ .event_img_right,
+ .event_img_frugt,
+ .event_img_larer,
  .event_img_snobrod{
    width: 100%;
 
@@ -818,73 +829,61 @@ section{
  }
  .knap_all{
      order: 7;
-
  }
-
-
-
+ .footer_left{
+   order: 9;
+ }
+ .footer_middle{
+   order: 8;
+ }
+ .footer_right{
+   order: 10;
+ }
 
  .info{
    margin-left: 1%;
  }
  .event_left2{margin-top: 20px;}
 
-}
-footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   margin: 30px auto 00px auto;
-   padding: 20px 20px 0 20px;
-   background-color: #2d314e;
-   color: white;
-   text-align: center;
-}
+ footer {
 
-.socialmedier{
-  width: 100%;
+    width: 100%;
+    background-color: #2d314e;
+    color: white;
+    text-align: center;
+ }
 
-      text-align: center;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-  }
+ .socialmedier{
+   }
+   .sc{
+   width: 180px;
+   text-decoration: none;
+
+   }
+   .vardekommune{
+   width: 150px;
+   min-width: 80px;
+   }
+ .fb{
+   width: 40px;
+   margin: 20px 20px 0 20px;
+   text-decoration: none;
+
+ }
+
+ .socialmedier a:link{
+     text-decoration: none;
+     color: #fff;
+ }
 
 
-  .vardekommune{
-  width: 30%;
-  min-width: 80px;
-  text-align: center;
-  }
 
-.flexifoot {
--webkit-flex: 1;  /* Safari 6.1+ */
--ms-flex: 1;  /* IE 10 */
-flex: 1;
-
-}
-.flexifoot >p{
-  margin: 0;
-  padding: 0;
-  font-size: 145%;
-  font-weight: 450;
 }
 
-.flexifoot a {
-  text-decoration: none;
-}
-.fb{
-  width: 12%;
-  min-width: 39px;
-    text-decoration: none;
-}
-.ig{
-  width: 12%;
-  min-width: 39px;
-  text-decoration: none;
-}
+
 
 /* Tablet Styles */
-@media only screen and (min-width: 400.01px) and (max-width: 720px) {
+@media only screen and (min-width: 401px) and (max-width: 719px) {
 
 
   .event_kasse1{
@@ -925,6 +924,12 @@ flex: 1;
     margin-top: 20px;
     max-height: 180px;
  }
+ .footer_left,
+ .footer_middle,
+ .footer_right{
+   width: 100%;
+
+}
  .event_left1,
  .event_right1,
  .event_left2,
@@ -935,7 +940,8 @@ flex: 1;
  .event_tekst2,
  .event_img_left,
  .event_img_middle,
- .event_img_right{
+ .event_img_right,
+ {
    width: 100%;
    min-height: 240px;
  }
@@ -954,6 +960,20 @@ flex: 1;
  .event_text_right{order: 6;
    margin-bottom: 20px;
  }
+ .knap_all{
+   order: 7;
+ }
+ .footer_left{
+   order: 9;
+ }
+ .footer_middle{
+   order: 8;
+ }
+ .footer_right{
+   order: 10;
+ }
+
+
  .info{
    margin-left: 2%;
  }
@@ -974,10 +994,86 @@ flex: 1;
      display: block;
    }
 
+   footer {
+      left: 0;
+      bottom: 0;
+      margin: 30px auto 00px auto;
+
+      background-color: #2d314e;
+      color: white;
+      text-align: center;
+   }
+
+   .socialmedier{
+     width: 80%;
+     margin: auto;
+
+
+     }
+     .sc{
+     width: 180px;
+     margin-bottom: 20px;
+
+
+     }
+     .vardekommune{
+       margin: auto;
+     width: 150px;
+     margin-bottom: 20px;
+
+     }
+   .fb{
+     margin: auto;
+     margin: 10px;
+     width: 39px;
+   }
+   .socialmedier a:link{
+       text-decoration: none;
+       color: #fff;
+   }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 720.01px) {
+@media only screen and (min-width: 720px) {
+
+  footer {
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     margin: 30px auto 00px auto;
+     padding: 20px 20px 0 20px;
+     background-color: #2d314e;
+     color: white;
+     text-align: center;
+  }
+
+  .socialmedier{
+    width: 200px;
+  padding: 50px 0 0 0;
+
+    }
+    .sc{
+    width: 200px;
+    float: right;
+    padding: 50px 0 0 0;
+    }
+    .vardekommune{
+    width: 180px;
+    min-width: 80px;
+    text-align: center;
+    }
+  .fb{
+    width: 40px;
+    margin: 10px;
+  float:left;
+      text-decoration: none;
+  }
+
+
+  .knap_all{
+    margin-top: 20px;
+  }
+
  .indhold {
    padding-top: 20px;
    display: flex;
@@ -987,7 +1083,10 @@ flex: 1;
  }
  .program,
  .kort,
- .info{
+ .info,
+ .footer_left,
+ .footer_middle,
+ .footer_right{
    width: 32%;
    height: 180px;
    max-height: 180px;
@@ -1012,10 +1111,10 @@ flex: 1;
 .event_left{
   margin-right: 2%;
 }
-.info{
+.info,.footer_right{
   margin-left: 2%;
 }
-.program{
+.program,.footer_left{
   margin-right: 2%;
 }
 .seo_om_vmf,.seo_om_vmf2,.seo_om_vmf3,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,

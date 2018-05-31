@@ -833,6 +833,10 @@ flex: 1;
   font-size: 145%;
   font-weight: 450;
 }
+
+.flexifoot a {
+  text-decoration: none;
+}
 .fb{
   width: 12%;
   min-width: 39px;

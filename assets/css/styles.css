@@ -941,10 +941,14 @@ section{
  .event_img_left,
  .event_img_middle,
  .event_img_right,
- {
+ .event_img_frugt,
+ .event_img_larer,
+ .event_img_snobrod{
    width: 100%;
-   min-height: 240px;
+
+   min-height: 220px;
  }
+ 
  .event_img_left{ order: 1;
  }
  .event_text_left{order: 2;
@@ -1027,10 +1031,7 @@ section{
      margin: 10px;
      width: 39px;
    }
-   .socialmedier a:link{
-       text-decoration: none;
-       color: #fff;
-   }
+
 }
 
 /* Desktop Styles */

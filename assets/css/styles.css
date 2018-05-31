@@ -1032,6 +1032,11 @@ section{
      width: 39px;
    }
 
+   .socialmedier a:link{
+       text-decoration: none;
+       color: #fff;
+   }
+
 }
 
 /* Desktop Styles */

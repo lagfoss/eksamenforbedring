@@ -43,16 +43,17 @@ else
               </header>
               <main>
 
-                <form method="POST" action="login.php">
-                        <form method="POST" action="test.php">
+                <form method="POST" action="login.php" class="login-box animate">
 
-                        User <input type="text" name="user"></input><br/>
-                        Pass <input type="password" name="pass"></input><br/>
-                        <input type="submit" name="submit" value="LOGIN"></input>
+                        <label><b>Username</b></label>
+                        <input type="text" name="user"></input>
+                        <label><b>Password</b></label>
+                        <input type="password" name="pass"></input>
+                        <input type="submit" name="submit" value="LOGIN" class="knap1"></input>
+                        <div>
+                          <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
+                        </div>
                         </form>
-                <div>
-                  <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
-                </div>
             </main>
             </body>
 

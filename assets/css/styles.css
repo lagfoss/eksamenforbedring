@@ -964,7 +964,6 @@ margin-top: 20px;
  .event_img_larer,
  .event_img_snobrod{
    width: 100%;
-
    min-height: 220px;
  }
 
@@ -997,7 +996,7 @@ margin-top: 20px;
  }
 
 .aa_siden{
-  margin-bottom:20px; 
+  margin-bottom:20px;
 }
 
  .info{
@@ -1135,14 +1134,17 @@ margin-top: 20px;
 .event_tekst2,
 .event_img_left,
 .event_img_middle,
-.event_img_right{
+.event_img_right,
+.event_img_frugt,
+.event_img_larer,
+.event_img_snobrod{
   width: 32%;
   min-height: 220px;
 }
-.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right{
+.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right,.event_img_snobrod{
   margin-left: 2%;
 }
-.event_left{
+.event_left,.event_img_frugt{
   margin-right: 2%;
 }
 .info,.footer_right{

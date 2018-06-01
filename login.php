@@ -1,9 +1,9 @@
 <?php
-$user = $_POST['uname'];
-$pass = $_POST['upw'];
+$user = $_POST['user'];
+$pass = $_POST['pass'];
 
-if($uname == "admin"
-&& $upw == "admin")
+if($user == "admin"
+&& $pass == "admin")
 {
 
   header("Location:klient.html");
@@ -43,19 +43,16 @@ else
               </header>
               <main>
 
-                  <form action="login.php" method="post" class="login-box animate" >
+                <form method="POST" action="login.php">
+                        <form method="POST" action="test.php">
 
-                  <label><b>Username</b></label>
-                  <input id="uName" type="text" placeholder="Enter Username" name="uname" required/>
-
-                  <label><b>Password</b></label>
-                  <input id="uPw" type="password" placeholder="Enter Password" name="upw" required/>
-
-                  <input type="submit" value="LOGIN" class="knap1"/>
-                  <div>
-                    <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
-                  </div>
-                </form>
+                        User <input type="text" name="user"></input><br/>
+                        Pass <input type="password" name="pass"></input><br/>
+                        <input type="submit" name="submit" value="LOGIN"></input>
+                        </form>
+                <div>
+                  <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
+                </div>
             </main>
             </body>
 

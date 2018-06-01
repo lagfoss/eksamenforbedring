@@ -445,12 +445,12 @@ section{
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     font-size: 40px;
-    padding: 150px 20px 0px 10%;
+    padding: 150px 0px 0px 0%;
     letter-spacing: 1.2pt;
     line-height: 44pt;
     color: #fff;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
 
   }
 .small h5{
@@ -472,7 +472,8 @@ section{
 }
 
 .tekst_sp{
-  background-color: #710000;
+  background-color: #9b8368;
+  color:
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;

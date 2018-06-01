@@ -145,7 +145,7 @@ footer{
   font-weight: 700;
   text-align: left;
 }
-.event_kasse1 p{
+.event_kasse1 p, #descrip{
   font-family: 'Montserrat', sans-serif;
   margin: 20px 20px 30px 0;
   font-weight: 300;
@@ -782,7 +782,7 @@ input[type=file]{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
-  .event_kasse1 p{
+  .event_kasse1 p, #descrip{
     font-family: 'Montserrat', sans-serif;
     font-size:12px;
   }
@@ -909,7 +909,7 @@ margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
   }
-  .event_kasse1 p{
+  .event_kasse1 p, #descrip{
     font-family: 'Montserrat', sans-serif;
     font-size:12px;
   }
@@ -997,7 +997,7 @@ margin-top: 20px;
  }
 
 .aa_siden{
-  margin-bottom:20px; 
+  margin-bottom:20px;
 }
 
  .info{

@@ -54,12 +54,12 @@ function check() {
   //stored data
   localStorage.userName = "admin";
   localStorage.userPw = "admin";
-  var storedName = localStorage.getItem('userName');
-  var storedPassword = localStorage.getItem('userPw');
+  var storedName = localStorage.getItem("userName");
+  var storedPassword = localStorage.getItem("userPw");
 
   //entered data from login
-  var userName = document.querySelector('#userName');
-  var userPassword = document.querySelector('#userPw');
+  var userName = document.querySelector("#userName");
+  var userPassword = document.querySelector("#userPw");
 
   //check if stored data from signup is equal to data from loginbutton
   if(userName.value == storedName && userPw.value == storedPassword) {
@@ -73,20 +73,20 @@ function check() {
 
 function store() {
   // Input from klient.html
-  var title = document.querySelector('#Title')
-  var tag = document.querySelector('#Tag')
-  var description = document.querySelector('#Descrip');
-  var content = document.querySelector('#Content');
-  var time = document.querySelector('#Time');
+  var title = document.querySelector("#Title")
+  var tag = document.querySelector("#Tag")
+  var description = document.querySelector("#Descrip");
+  var content = document.querySelector("#Content");
+  var time = document.querySelector("#Time");
   //storing input from klient.html
-  localStorage.setItem('title', title.value);
-  localStorage.setItem('tag', tag.value);
-  localStorage.setItem('descrip', description.value);
-  localStorage.setItem('content', content.value);
-  localStorage.setItem('time', time.value);
+  localStorage.setItem("title", title.value);
+  localStorage.setItem("tag", tag.value);
+  localStorage.setItem("descrip", description.value);
+  localStorage.setItem("content", content.value);
+  localStorage.setItem("time", time.value);
 }
 
-document.querySelector('#title').innerHTML = localStorage.getItem("title");
-document.querySelector('#tag').innerHTML = localStorage.getItem("tag");
-document.querySelector('#descrip').innerHTML = localStorage.getItem("descrip");
-document.querySelector('#content').innerHTML = localStorage.getItem("content");
+document.querySelector("#title").innerHTML = localStorage.getItem("title");
+document.querySelector("#tag").innerHTML = localStorage.getItem("tag");
+document.querySelector("#descrip").innerHTML = localStorage.getItem("descrip");
+document.querySelector("#content").innerHTML = localStorage.getItem("content");

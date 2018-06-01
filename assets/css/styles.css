@@ -964,21 +964,20 @@ margin-top: 20px;
  .event_img_larer,
  .event_img_snobrod{
    width: 100%;
-
    min-height: 220px;
  }
 
- .event_img_left{ order: 1;
+ .event_img_left,.event_img_frugt{ order: 1;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;
  }
- .event_img_middle{ order: 3;
+ .event_img_middle,.event_img_larer{ order: 3;
  }
  .event_text_middle{order: 4;
    margin-bottom: 20px;
  }
- .event_img_right{order: 5;
+ .event_img_right,.event_img_snobrod{order: 5;
  }
  .event_text_right{order: 6;
    margin-bottom: 20px;
@@ -1089,7 +1088,6 @@ margin-top: 20px;
     .sc{
     width: 200px;
     float: right;
-    padding: 50px 0 0 0;
     }
     .vardekommune{
     width: 180px;
@@ -1135,14 +1133,17 @@ margin-top: 20px;
 .event_tekst2,
 .event_img_left,
 .event_img_middle,
-.event_img_right{
+.event_img_right,
+.event_img_frugt,
+.event_img_larer,
+.event_img_snobrod{
   width: 32%;
   min-height: 220px;
 }
-.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right{
+.event_left1,.event_img_middle,.event_img_right,.event_text_middle,.event_text_right,.event_img_snobrod{
   margin-left: 2%;
 }
-.event_left{
+.event_left,.event_img_frugt{
   margin-right: 2%;
 }
 .info,.footer_right{

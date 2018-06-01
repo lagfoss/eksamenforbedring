@@ -772,7 +772,7 @@ input[type=file]{
   h4{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 54px;
+  margin-top: 68px;
   font-size: 5.5vw;
   font-weight: 700;
   letter-spacing: 0.75pt;
@@ -953,9 +953,15 @@ margin-top: 20px;
   .kort,
   .info{
     width: 32%;
+<<<<<<< HEAD
     height: 185px;
     margin-top: 30px;
     max-height: 185px;
+=======
+    height: 160px;
+    margin-top: 20px;
+    max-height: 160px;
+>>>>>>> 9733cc38570082803ad083bbb435aabdc1b5f9c7
  }
  .footer_left,
  .footer_middle,
@@ -1134,8 +1140,13 @@ margin-top: 20px;
  .footer_middle,
  .footer_right{
    width: 32%;
+<<<<<<< HEAD
    height: 185px;
    max-height: 185px;
+=======
+   height: 160px;
+   max-height: 160px;
+>>>>>>> 9733cc38570082803ad083bbb435aabdc1b5f9c7
 }
 .event_left1,
 .event_right1,

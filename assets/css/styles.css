@@ -176,7 +176,7 @@ h3{
 text-align: center;
 font-family: 'Montserrat', sans-serif;
 margin: 0px 0 0 0;
-padding: 30px 18% 30px 18% ;
+padding: 20px 18% 20px 18% ;
 font-size: 14px;
 font-weight: 300;
 letter-spacing: 0.75pt;
@@ -461,23 +461,25 @@ section{
 
 .intro{
  width: 100%;
- background-color: #9b8368;
+ background-color: #710000;
  margin: 0px 0 0 0;
 }
 
 .intro h3{
- color: #000;
+ color: #fff;
  font-size: 15px;
  letter-spacing: 1.0pt;
- font-weight: 400;
+ font-weight: 500;
 }
 
-.tekst_sp{
-  background-color: #9b8368;
-  color:
-  margin-top: 20px;
+.tekst_sp h3{
+  background-color: #710000;
+  font-weight: 400;
+  padding: 20px 8% 20px 8% ;
   display: flex;
   flex-wrap: wrap;
+  font-size: 15px;
+  letter-spacing: 1.0pt;
   width: 80%;
   margin: 20px auto 0 auto;
 }

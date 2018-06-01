@@ -967,7 +967,7 @@ margin-top: 20px;
    min-height: 220px;
  }
 
- .event_img_left{ order: 1;
+ .event_img_left,.event_img_frugt{ order: 1;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;

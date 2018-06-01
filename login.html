@@ -29,15 +29,15 @@
   </header>
   <main>
 
-    <form class="login-box animate">
+    <form action="login.php" method="post" class="login-box animate" >
 
       <label><b>Username</b></label>
-      <input id="userName" type="text" placeholder="Enter Username" name="uname" required/>
+      <input id="uName" type="text" placeholder="Enter Username" name="uname" required/>
 
       <label><b>Password</b></label>
-      <input id="userPw" type="password" placeholder="Enter Password" name="psw" required/>
+      <input id="uPw" type="password" placeholder="Enter Password" name="upw" required/>
 
-      <button class="knap1" onclick="check()">LOGIN</button>
+      <input type="submit" value="LOGIN" class="knap1"/>
       <div>
         <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
       </div>

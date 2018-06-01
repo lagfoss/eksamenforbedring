@@ -10,3 +10,5 @@ if($uname == "admin"
 else
 {
     if(isset($_POST))
+}
+?>

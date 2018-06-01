@@ -460,9 +460,17 @@ section{
 
 .intro{
  width: 100%;
- background-color: #710000;
+ background-color: #9b8368;
  margin: 0px 0 0 0;
 }
+
+.intro h3{
+ color: #000;
+ font-size: 15px;
+ letter-spacing: 1.0pt;
+ font-weight: 400;
+}
+
 .tekst_sp{
   background-color: #710000;
   margin-top: 20px;

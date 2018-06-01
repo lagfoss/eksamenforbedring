@@ -813,11 +813,12 @@ input[type=file]{
     width: 80%;
     margin: 0 auto;
   }
+
   .program,
   .kort,
   .info{
     width: 100%;
-    margin: 20px 0 10px 0;
+    margin: 10px 0 10px 0;
     height: 185px;
     max-height: 185px;
  }
@@ -1226,7 +1227,6 @@ margin-top: 20px;
   }
 
 
-
    .program-background{
    margin-top: 20px;
     background-image:url("../images/boatatriverbed.jpg");
@@ -1348,8 +1348,8 @@ margin-top: 20px;
 width: 100%;
 margin: 0px 0 0 0;
 padding: 0;
-min-height: 680px;
-background-image: url("../images/kort1.jpg");
+min-height: 1200px;
+background-image: url("../images/korti.jpg");
 background-blend-mode: darken;
 background-position: center;
 background-size: cover;
@@ -1523,7 +1523,7 @@ margin-left: 35%;
       background-size: cover;
     }
     .article4{
-      background-image: url("../images/salgvedvandet.jpg");
+      background-image: url("../images/ekso.jpg");
       background-position: center;
       background-size: cover;
     }

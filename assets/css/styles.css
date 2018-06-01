@@ -185,7 +185,7 @@ color: #fff;
 h4{
 text-align: center;
 font-family: 'Montserrat', sans-serif;
-margin-top: 48px;
+margin-top: 68px;
 font-size: 2.5vw;
 font-weight: 700;
 letter-spacing: 0.75pt;
@@ -629,15 +629,14 @@ section{
 .knap1{
     border-radius: 5px;
     text-align: center;
-
     border: 0px;
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 7px;
     color: #fff;
     background-color: #6a802a;
     padding: 12px;
     margin-bottom: 20px;
-    width: 100px;
+    width: 90px;
 }
 
 .knap1 a:link{
@@ -773,7 +772,7 @@ input[type=file]{
   h4{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 54px;
+  margin-top: 68px;
   font-size: 5.5vw;
   font-weight: 700;
   letter-spacing: 0.75pt;
@@ -819,8 +818,8 @@ input[type=file]{
   .info{
     width: 100%;
     margin: 10px 0 10px 0;
-    height: 130px;
-    max-height: 130px;
+    height: 160px;
+    max-height: 160px;
  }
  .footer_left,
  .footer_middle,
@@ -954,9 +953,9 @@ margin-top: 20px;
   .kort,
   .info{
     width: 32%;
-    height: 130px;
+    height: 160px;
     margin-top: 20px;
-    max-height: 130px;
+    max-height: 160px;
  }
  .footer_left,
  .footer_middle,
@@ -1135,8 +1134,8 @@ margin-top: 20px;
  .footer_middle,
  .footer_right{
    width: 32%;
-   height: 130px;
-   max-height: 130px;
+   height: 160px;
+   max-height: 160px;
 }
 .event_left1,
 .event_right1,

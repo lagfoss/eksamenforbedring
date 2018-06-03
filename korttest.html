@@ -31,29 +31,44 @@
 
 <body>
   <script>
+
+
+//Der er i alt 3 funktioner: imageZoom, movelens og getCurserPos
+//vi har 2 parametre: storkort og resultatkort
+//hele funktionen image zoom bliver kaldt længere ned på siden
     function imageZoom(stortkort, resultatkort) {
-      var img, lens, result, cx, cy;
+//her nævnes variabblerne for imagezoom,
+      var img, result, lens, cx, cy;
+
+//Her defineres det storekort som er et billed (img) i html
       img = document.getElementById(stortkort);
+//Her defineres resultat kortet som er lavet af en div i html
       result = document.getElementById(resultatkort);
 
-
-
-/*dragoverfirkant*/
-      /*her laves dragoverfirkant*/
+//her laves en tom div til dragoverfirkanten tom div sættes ind i htmlén
+// lensen har classen img-zoom-lens som bliver stylet i css'en så den kan ses.
+//Det svarer til følgende i html: <div class="img-zoom-lens"></div>
       lens = document.createElement("DIV");
       lens.setAttribute("class", "img-zoom-lens");
 
-      /*her indsættes og vises dagoverfirkanen på skærmen*/
+//her indsættes og vises lensen (dagoverfirkanen) og sættes ud i html'en før a
+//Vi tager fat i img's parrent element som er a og indsætter lensen som er nævnt ovenfor ind i html'en over a elementet
+//parentNode.insertBefore(newNode, referenceNode)
       img.parentElement.insertBefore(lens, img);
 
 
-/*resultatkort*/
-      /*her beregnes forholdet mellem resultatkortet og dragover firkanten*/
-      cx = result.offsetWidth / lens.offsetWidth;
+      //her beregnes forholdet mellem resultatkortet og dragover firkanten (lensen)
+      // forholdende skal bruges til at fortælle om det skal vises i samme forhold på y og x eller om det skal strækkes.
+      //forholdene  bruges på linje 72 hvor lensen bliver lavet og vises
+      //her er forhold i bredden x
+      cx = result.offsetWidth / lens.offsetWidt;
+      //her er forhold i højden y
       cy = result.offsetHeight / lens.offsetHeight;
 
-      /*her vises resultat fra dragoverfirkant i resultatkort*/
+      /*her vises resultat fra dragoverfirkant(lensen) i resultatkort*/
+      // dette svarer til dette i CSS:    background-image: url("img.src");
       result.style.backgroundImage = "url('" + img.src + "')";
+      // dette svarer til dette i css:    widtht: resultat px;     height: resultat px;
       result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
 
 
@@ -153,12 +168,18 @@ function moveLens(e) {
   <main>
     <div class="img-zoom-container">
       <a href="kort5.html">
+
       <img id="kort" class="kortbrede" src="assets/images/kort3k.jpg" alt="Kort over Varde Middelalderfestival">
       <div id="myresult" class="img-zoom-result"></div></a>
     </div>
 
 
   </main>
+
+
+
+
+
 
   <script>
     // Initiate zoom effect:

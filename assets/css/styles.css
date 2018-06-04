@@ -1170,7 +1170,7 @@ margin-top: 20px;
   margin-right: 2%;
 }
 .seo_om_vmf,.seo_om_vmf2,.seo_om_vmf3,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
-.article1,.article2,.article3,.article4,.article_kasse2,.frivillig,.soundcloud{
+.article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;}
 
@@ -1524,6 +1524,11 @@ margin-left: 35%;
     }
     .article4{
       background-image: url("../images/ekso.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .article5{
+      background-image: url("../images/soundcloud.jpg");
       background-position: center;
       background-size: cover;
     }

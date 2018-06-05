@@ -189,27 +189,28 @@ margin-top: 68px;
 font-size: 2.5vw;
 font-weight: 700;
 letter-spacing: 0.75pt;
+text-decoration: none;
 vertical-align:middle;
 color: #fff;
 }
 
 
-h4 a:link {
+.program,.kort,.info, h4 a:link {
     text-decoration: none;
     color: #fff;
 }
 
-h4  a:visited {
+.program,.kort,.info, h4  a:visited {
     text-decoration: none;
     color: #fff;
 }
 
-h4  a:hover {
+.program,.kort,.info, h4  a:hover {
     text-decoration: none;
     color: #c4b298;
 }
 
-h4 a:active {
+.program,.kort,.info, h4 a:active {
     text-decoration: none;
 }
 

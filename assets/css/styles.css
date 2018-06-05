@@ -127,7 +127,7 @@ footer{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
   font-size: 40px;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 0px 20px;
   letter-spacing: 1.2pt;
   line-height: 44pt;
   color: #fff;
@@ -148,7 +148,7 @@ footer{
 .event_kasse1 p, #descrip{
   font-family: 'Montserrat', sans-serif;
   margin: 20px 20px 30px 0;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 14pt;
   font-size:12px;
 }
@@ -711,7 +711,7 @@ input[type=file]{
     color: #000;
     border: 1px solid #000;
     padding: 9px;
-    width: 120px;
+    width: 70px;
 }
 .rcorners2 {
   margin-top: 10px;
@@ -1171,7 +1171,7 @@ margin-top: 20px;
   margin-right: 2%;
 }
 .seo_om_vmf,.seo_om_vmf2,.seo_om_vmf3,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
-.article1,.article2,.article3,.article4,.article_kasse2,.frivillig,.soundcloud{
+.article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;}
 
@@ -1524,6 +1524,11 @@ margin-left: 35%;
       background-size: cover;
     }
     .article4{
+      background-image: url("../images/ekso.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .article5{
       background-image: url("../images/soundcloud.jpg");
       background-position: center;
       background-size: cover;

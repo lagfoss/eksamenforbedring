@@ -32,28 +32,29 @@
 <body>
   <script>
 
-
-//Der er i alt 3 funktioner: imageZoom, movelens og getCurserPos
-//vi har 2 parametre: storkort og resultatkort
-//hele funktionen image zoom bliver kaldt længere ned på siden
+    //Der er i alt 3 funktioner: imageZoom, movelens og getCurserPos
+    //vi har 2 parametre: storkort og resultatkort
+    //hele funktionen image zoom bliver kaldt længere ned på siden
     function imageZoom(stortkort, resultatkort) {
-//her nævnes variabblerne for imagezoom,
+
+      //her nævnes variabblerne for imagezoom,
       var img, result, lens, cx, cy;
 
-//Her defineres det storekort som er et billed (img) i html
+      //Her defineres det storekort som er et billed (img) i html
       img = document.getElementById(stortkort);
-//Her defineres resultat kortet som er lavet af en div i html
+
+      //Her defineres resultat kortet som er lavet af en div i html
       result = document.getElementById(resultatkort);
 
-//her laves en tom div til dragoverfirkanten tom div sættes ind i htmlén
-// lensen har classen img-zoom-lens som bliver stylet i css'en så den kan ses.
-//Det svarer til følgende i html: <div class="img-zoom-lens"></div>
+      //her laves en tom div til dragoverfirkanten tom div sættes ind i htmlén
+      // lensen har classen img-zoom-lens som bliver stylet i css'en så den kan ses.
+      //Det svarer til følgende i html: <div class="img-zoom-lens"></div>
       lens = document.createElement("DIV");
       lens.setAttribute("class", "img-zoom-lens");
 
-//her indsættes og vises lensen (dagoverfirkanen) og sættes ud i html'en før a
-//Vi tager fat i img's parrent element som er a og indsætter lensen som er nævnt ovenfor ind i html'en over a elementet
-//parentNode.insertBefore(newNode, referenceNode)
+      //her indsættes og vises lensen (dagoverfirkanen) og sættes ud i html'en før a
+      //Vi tager fat i img's parrent element som er a og indsætter lensen som er nævnt ovenfor ind i html'en over a elementet
+      //parentNode.insertBefore(newNode, referenceNode)
       img.parentElement.insertBefore(lens, img);
 
 
@@ -67,14 +68,18 @@
 
       /*her vises resultat fra dragoverfirkant(lensen) i resultatkort*/
       // dette svarer til dette i CSS:    background-image: url("img.src");
+      // der står img src i stedet for kort.png fordi vi gerne vil have hele kilden med sammen med mapper osv og så kan man nøjes med at udskitfe billedet øverst og kun et sted (source of true kalder man det)
       result.style.backgroundImage = "url('" + img.src + "')";
-      // dette svarer til dette i css:    widtht: resultat px;     height: resultat px;
+      // dette svarer til dette i css:    background-Size: resultat px   resultat px
       result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
 
 
 
 /*eventlistendner*/
       /*dragoverfirkant og resultetkort funktion skal vises ved dragover*/
+      //addEventlistener er en funktion som google har lavet, mouse over er også en parameter som google kender
+      // Vi fortæller computeren: hver eneste gang musen bevæger sig skal du, skal du køre denne her funktion, nemlig movelens som er nedenfor
+      //og det gælder både for lens og img at musen skal mærke det ellers virker det kun udnefor lensen
       lens.addEventListener("mousemove", moveLens);
       img.addEventListener("mousemove", moveLens);
 
@@ -83,17 +88,20 @@
       img.addEventListener("touchmove", moveLens);
 
 
-
-
+//her er e en parameter vi har navngivet e
 function moveLens(e) {
         var pos, x, y;
 
-        /*forhindre eventuelle andre handlinger, der kan opstå, når du flytter musen over billedet:*/
+
+        //e defineres som prevent default, prevent default forhindre andre handlinger, der kan opstå, når du flytter musen over billedet
         e.preventDefault();
-        /*her fås musens x og y position når man holder musen over*/
+
+        //her fås musens x og y position som skal bruges nedenfor
         pos = getCursorPos(e);
 
-        /*beregning af positionen af lensen (dragover firkenten)*/
+        /*beregning af hvad man skal se fra lensen (dragover firkenten)*/
+        //hver gang musen flyttes beregnes det der ses her igen og igen
+        //positionen af x - lensens bredde / 2
         x = pos.x - (lens.offsetWidth / 2);
         y = pos.y - (lens.offsetHeight / 2);
 
@@ -104,7 +112,7 @@ function moveLens(e) {
         lens.style.left = x + "px";
         lens.style.top = y + "px";
 
-        /*Vis hvad lensen (dragoverfirkanten) ser*/
+        /*Vis hvad lensen (dragoverfirkanten) ser oppe i resultetkort/
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
       }
 

@@ -1309,7 +1309,6 @@ margin-top: 20px;
 .time-label{
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 .popup-info{
@@ -1319,6 +1318,7 @@ margin-top: 20px;
   background-color: transparent;
   background-color: #2e304f;
   color: #f4f3ef;
+  cursor: pointer;
 }
 
 .popup-info2{

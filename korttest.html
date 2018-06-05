@@ -62,7 +62,7 @@
       // forholdende skal bruges til at fortælle om det skal vises i samme forhold på y og x eller om det skal strækkes.
       //forholdene  bruges på linje 72 hvor lensen bliver lavet og vises
       //her er forhold i bredden x
-      cx = result.offsetWidth / lens.offsetWidt;
+      cx = result.offsetWidth / lens.offsetWidth;
       //her er forhold i højden y
       cy = result.offsetHeight / lens.offsetHeight;
 
@@ -79,7 +79,7 @@
       /*dragoverfirkant og resultetkort funktion skal vises ved dragover*/
       //addEventlistener er en funktion som google har lavet, mouse over er også en parameter som google kender
       // Vi fortæller computeren: hver eneste gang musen bevæger sig skal du, skal du køre denne her funktion, nemlig movelens som er nedenfor
-      //og det gælder både for lens og img at musen skal mærke det ellers virker det kun udnefor lensen
+      //og det gælder både for lens og img at musen skal mærke det ellers virker det kun udenfor lensen
       lens.addEventListener("mousemove", moveLens);
       img.addEventListener("mousemove", moveLens);
 
@@ -102,6 +102,7 @@ function moveLens(e) {
         /*beregning af hvad man skal se fra lensen (dragover firkenten)*/
         //hver gang musen flyttes beregnes det der ses her igen og igen
         //positionen af x - lensens bredde / 2
+        //  /2 fordi det er bredden /2
         x = pos.x - (lens.offsetWidth / 2);
         y = pos.y - (lens.offsetHeight / 2);
 
@@ -112,7 +113,7 @@ function moveLens(e) {
         lens.style.left = x + "px";
         lens.style.top = y + "px";
 
-        /*Vis hvad lensen (dragoverfirkanten) ser oppe i resultetkort/
+        /*Vis hvad lensen (dragoverfirkanten) ser oppe i resultetkort*/
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
       }
 

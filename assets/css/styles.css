@@ -1373,7 +1373,7 @@ cursor: zoom-in;
 
 #kort5{
 width: 1500px;
-min-height: 680px;
+min-height: 680p
 background-image: url("../images/kort5.jpg");
 background-position: center;
 background-size: cover;
@@ -1424,7 +1424,7 @@ cursor: zoom-out;
     cursor: zoom-in;
   }
 
-.kortbrede{ width: 100%}
+.kortbrede{ width: 100%;}
 
 
    /*kontakt styles*/

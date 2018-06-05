@@ -102,37 +102,46 @@ function moveLens(e) {
         /*beregning af hvad man skal se fra lensen (dragover firkenten)*/
         //hver gang musen flyttes beregnes det der ses her igen og igen
         //positionen af x - lensens bredde / 2
-        //  /2 fordi det er bredden /2
+        //  /2 fordi det er bredden /2. se tegning med koordinat sytem
         x = pos.x - (lens.offsetWidth / 2);
         y = pos.y - (lens.offsetHeight / 2);
-
-
 
 
         /*her sættes positionen af lensen (dragover firkenten)*/
         lens.style.left = x + "px";
         lens.style.top = y + "px";
 
-        /*Vis hvad lensen (dragoverfirkanten) ser oppe i resultetkort*/
+        /*Vis hvad lensen (dragoverfirkanten) ser oppe i resultetkort
+        CY og CX er fohold  mellem resultatkortet og dragover firkanten (lensen) og X og y er beregning af kvadratet der skal kopieres fra musens position*/
+        /*her fortælles at for hver gang jeg rykker musen skal denne styling laves ud fra data omkring placering.
+        det svarer til dette i css: backgroundPosition: -res, -res */
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
       }
 
 
 
-
+//nulstil og læs forfra hver gang jeg bevægermusen
   function getCursorPos(e) {
         var a, x = 0,
           y = 0;
+    /*
+The variable evt is assigned to the value of event or if event is undefined it is assigned the value of window.event.
+How this works is that in javascript, boolean operators don't evaluate to true or false but instead evaluates to the value of the last object that is not falsy* or the falsy value.  // betyder eller */
         e = e || window.event;
 
-        /*her fås x og y positioner af det store kort*/
+        /*her fås x og y positioner af det store kort
+        Metoden Element.getBoundingClientRect () returnerer størrelsen på et element og dets position i forhold til visningsporten.*/
         a = img.getBoundingClientRect();
 
-        /*Her beregnes musens x og y koordinater i forhold til det store kort*/
+        /*Her beregnes musens x og y koordinater i forhold til det store kort
+        event.pageX betyder at musens position er relative til venstre hjørne af dokumentet*/
         x = e.pageX - a.left;
         y = e.pageY - a.top;
 
-        /*her overvejes hver side scrollin / eller måske position?*/
+        /*her overvejes hver side scrollin / eller måske position for både y og x
+        PageXOffset og pageYOffset returnerer pixels'ne, hvor det aktuelle dokument
+        er scrollet fra øverste venstre hjørne af vinduet, vandret og lodret.
+        */
         x = x - window.pageXOffset;
         y = y - window.pageYOffset;
         return {

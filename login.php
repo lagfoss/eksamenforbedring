@@ -43,17 +43,18 @@ else
               </header>
               <main>
 
-                <form method="POST" action="login.php" class="login-box animate">
-
+                <div class="login-box animate">
+                <form method="POST" action="login.php">
                         <label><b>Username</b></label>
                         <input type="text" name="user"></input>
                         <label><b>Password</b></label>
                         <input type="password" name="pass"></input>
                         <input type="submit" name="submit" value="LOGIN" class="knap1"></input>
+                        </form>
                         <div>
                           <button class="knap1" onclick="window.location.href='index.html'">Gå tilbage</button>
                         </div>
-                        </form>
+                      </div>
             </main>
             </body>
 

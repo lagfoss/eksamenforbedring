@@ -127,7 +127,7 @@ footer{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
   font-size: 40px;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 0px 20px;
   letter-spacing: 1.2pt;
   line-height: 44pt;
   color: #fff;
@@ -148,7 +148,7 @@ footer{
 .event_kasse1 p, #descrip{
   font-family: 'Montserrat', sans-serif;
   margin: 20px 20px 30px 0;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 14pt;
   font-size:12px;
 }

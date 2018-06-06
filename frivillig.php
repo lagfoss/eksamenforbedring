@@ -7,7 +7,7 @@ if (isset($_POST['submit'])){
 
 
 
-  $mailTo = "lagfoss@gmail.com";
+  $mailTo = "lagfoss@gmail.com, sofie_feldborg@hotmail.com";
   $headers = "From: ".$mailFrom;
   $txt = "Du har modtaget en mail fra ".$name.".\n\n".$subject;
 

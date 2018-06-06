@@ -357,7 +357,7 @@ color: #fff;
 .show {display:block;}
 
 @media screen and (max-width: 920px) {
-
+/*nedenstående forsvinder når ovenstående sker*/
   nav a, .dropdown img, .dropdown .droplang, .empty2 {
     display: none;
   }
@@ -520,6 +520,7 @@ section{
  border: none;
  cursor: pointer;
 }
+
 .kort {
   background-image: url("../images/kort_front.jpg");
   background-color: rgba(0,0,0,0.5);

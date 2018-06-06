@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
   $message = $_POST['message'];
 
 
-  $mailTo = "lagfoss@gmail.com";
+  $mailTo = "lagfoss@gmail.com, tca47@live.dk, sofie_feldborg@hotmail.com, bangster95@gmail.com";
   $headers = "From: ".$mailFrom;
   $txt = "Tilmeding som frivillig fra ".$name.".\n\n".$message;
 

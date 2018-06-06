@@ -50,6 +50,7 @@ Colors:
           margin: 0;
         }
 
+        /* Login-knap i footer */
   .klient {
     background-color: #2d314e;
     color: white;
@@ -61,6 +62,7 @@ Colors:
     width: 100%;
     }
 
+/* Hover for alle knapper på hjemmesiden */
 button:hover {
     opacity: 0.8;
     }

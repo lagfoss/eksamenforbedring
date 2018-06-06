@@ -46,9 +46,6 @@ Colors:
    * 1.0 Global
    */
    body {
-          font-family: Helvetica, Arial, sans-serif;
-          font-size: 12px;
-          color: #333333;
           background-color: #c4b298;
           margin: 0;
         }
@@ -238,6 +235,8 @@ color: #fff;
  * 2.0 header
  */
  header{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
    height: 60px;
    background-color: #c4b298;
    right: 0;

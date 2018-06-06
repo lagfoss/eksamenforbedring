@@ -503,6 +503,8 @@ section{
  background-blend-mode: darken;
  background-position: center;
  background-size: cover;
+ border: none;
+ cursor: pointer;
 }
 .kort {
   background-image: url("../images/kort_front.jpg");
@@ -510,6 +512,8 @@ section{
   background-blend-mode: darken;
  background-position: center;
  background-size: cover;
+ border: none;
+ cursor: pointer;
 }
 
 
@@ -521,6 +525,8 @@ section{
   background-blend-mode: darken;
  background-position: center;
  background-size: cover;
+ border:none;
+ cursor: pointer;
 }
 
 

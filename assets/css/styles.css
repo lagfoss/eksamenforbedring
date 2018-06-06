@@ -369,11 +369,11 @@ width: 100%;
   }
 }
 
+/* Billedet på forsiden*/
 section{
  width: 100%;
- margin: 0px 0 0 0;
+ margin: 0;
  padding: 0;
-
  min-height: 360px;
  background-color: rgba(0,0,0,0.3);
  background-image: url("../images/front_img.jpg");
@@ -381,9 +381,10 @@ section{
  background-position: center;
  background-size: cover;
 }
+
 .small{
  width: 100%;
- margin: 0px 0 0 0;
+ margin: 0;
  padding: 0;
  min-height: 250px;
  background-color: rgba(0,0,0,0.3);
@@ -392,8 +393,8 @@ section{
  background-position: center;
  background-size: cover;
 }
-.small h2{
 
+.small h2{
   font-size: 4.5vw;
   padding-top: 150px;
   letter-spacing: 1.2pt;
@@ -416,7 +417,7 @@ section{
   display: none;
 }
 
-
+/* Den første røde kasse på forsiden*/
 .intro{
  width: 100%;
  background-color: #710000;
@@ -430,14 +431,6 @@ section{
  font-size: 15px;
  padding-top: 15px;
  padding-bottom: 0;
- letter-spacing: 1.0pt;
- font-weight: 500;
-}
-.intro2 h3{
- color: #fff;
- font-size: 15px;
- padding-top: 0;
- padding-bottom: 15px;
  letter-spacing: 1.0pt;
  font-weight: 500;
 }

@@ -266,7 +266,9 @@ color: #fff;
   .banner{
     width: 135px;
   }
-
+  .banner_map{
+    width: 135px;
+  }
   /*
    * 2.2 nav
    */
@@ -770,6 +772,10 @@ håber ikke at jeg har deaktiverert noget,
 /* Mobile Styles */
 @media only screen and (max-width: 419px) {
 
+  .banner_map{
+    width: 65px;
+  }
+
   .label{
     font-size: 13px;
     margin: 20px 0 5px 0;
@@ -943,6 +949,10 @@ margin-top: 20px;
 }
 /* Tablet Styles */
 @media only screen and (min-width: 420px) and (max-width: 719px) {
+
+  .banner_map{
+    width: 85px;
+  }
 
   .label{
     font-size: 13px;

@@ -482,6 +482,7 @@ section{
  cursor: pointer;
 }
 
+/* Billeder til artikel på forsiden*/
 .event_img_left {
   background-image: url("../images/7kanten.jpg");
  background-position: center;

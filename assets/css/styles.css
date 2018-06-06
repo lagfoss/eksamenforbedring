@@ -463,7 +463,7 @@ section{
 
 .intro{
  width: 100%;
- background-color: #710000;
+ background-color: #541302;
  margin: 0px 0 0 0;
 }
 
@@ -510,6 +510,10 @@ section{
  background-position: center;
  background-size: cover;
 }
+
+
+
+
 .info {
   background-image: url("../images/info_front.jpg");
   background-color: rgba(0,0,0,0.5);
@@ -629,15 +633,18 @@ section{
 }
 .knap1{
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     text-align: center;
     border: 0px;
     text-transform: uppercase;
-    font-size: 7px;
+    font-size: 9px;
     color: #fff;
     background-color: #6a802a;
-    padding: 12px;
+    padding: 10px;
     margin-bottom: 20px;
     width: 90px;
+    cursor: pointer;
 }
 
 .knap1 a:link{
@@ -675,7 +682,7 @@ input[type=file]{
     border: 0px;
     text-transform: uppercase;
     font-size: 9px;
-
+    cursor: pointer;
     color: #fff;
     background-color: #6a802a;
     padding: 12px;
@@ -1365,7 +1372,7 @@ cursor: zoom-in;
 
 #kort5{
 width: 1500px;
-min-height: 680px;
+min-height: 680p
 background-image: url("../images/kort5.jpg");
 background-position: center;
 background-size: cover;
@@ -1416,7 +1423,7 @@ cursor: zoom-out;
     cursor: zoom-in;
   }
 
-.kortbrede{ width: 100%}
+.kortbrede{ width: 100%;}
 
 
    /*kontakt styles*/

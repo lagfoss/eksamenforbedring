@@ -62,23 +62,19 @@
             <p>Titel bod, event eller stand</p>
             <input id="Title" type="text" autofocus required/>
 
-            <p>Artiklens kategori</p>
-            <input id="Tag" type="text" required/>
-
             <p>Kort beskrivelse</p>
             <textarea id="Descrip" rows="4" cols="70" required></textarea>
 
-            <p>
-              Artikel tekst</p>
+            <p>Artikel tekst</p>
             <textarea id="Content" rows="4" cols="70" required></textarea>
 
-            <p> Tidspunkt og antal dage </p>
+            <p>Tidspunkt og antal dage </p>
             <input type="text" id="Time" required/>
 
-            <label for="upimg" class="knap1">TILFØJ BILLEDE</label>
-              <input id="upimg" type="file"></input>
+            <label for="upimg" class="knap1" >TILFØJ BILLEDE</label>
+              <input id="upimg" type="file"/>
             <div class="">
-              <input class="knap1" onclick="store()" value="UPLOAD ARTIKEL" type="submit"></input>
+              <button class="knap1" onclick="store()" style="margin-top:10px;">UPLOAD ARTIKEL</button>
             </div>
           </form>
       </div>

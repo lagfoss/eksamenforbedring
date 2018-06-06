@@ -87,6 +87,5 @@ function store() {
 }
 
 document.querySelector("#title").innerHTML = localStorage.getItem("title");
-document.querySelector("#tag").innerHTML = localStorage.getItem("tag");
 document.querySelector("#descrip").innerHTML = localStorage.getItem("descrip");
 document.querySelector("#content").innerHTML = localStorage.getItem("content");

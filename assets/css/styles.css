@@ -176,7 +176,7 @@ h3{
 text-align: center;
 font-family: 'Montserrat', sans-serif;
 margin: 0px 0 0 0;
-padding: 20px 18% 20px 18% ;
+padding: 20px 8% 20px 8% ;
 font-size: 14px;
 font-weight: 300;
 letter-spacing: 0.75pt;
@@ -488,10 +488,10 @@ section{
  font-weight: 500;
 }
 
-.tekst_sp h3{
+.tekst_sp{
   background-color: #710000;
   font-weight: 400;
-  padding: 20px 8% 20px 8% ;
+  padding: 20px 0 20px 0 ;
   display: flex;
   flex-wrap: wrap;
   font-size: 15px;
@@ -1014,9 +1014,6 @@ margin-top: 20px;
    order: 10;
  }
 
-.aa_siden{
-  margin-bottom:20px;
-}
 
  .info{
    margin-left: 2%;
@@ -1450,12 +1447,6 @@ margin-left: 35%;
   display: inline-block;
 }
 */
-
-
-   * {
-       box-sizing: border-box;
-   }
-
    input[type=text], input[type=password], select, textarea {
        width: 96.5%;
        padding: 12px;

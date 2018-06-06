@@ -327,37 +327,20 @@ width: 100%;
 /* Har med javascript at gøre, dropdown og popup */
 .show {display:block;}
 
+  /* Header responsive */
 @media screen and (max-width: 920px) {
-
+/*nedenstående forsvinder når ovenstående sker*/
   nav a, .dropdown img, .dropdown .droplang, .empty2 {
     display: none;
   }
+
+  /* Burger menu bliver synlig */
   nav a.icon {
     position: relative;
     margin-top: 15px;
     float: right;
     display: block;
   }
-
-  #main-program {
-
-      margin: 0 auto;
-      text-align: center;
-
-  }
-
-  #main-program div {
-      -webkit-flex: 1;  /* Safari 6.1+ */
-      -ms-flex: 1;  /* IE 10 */
-      flex: 1;
-  }
-
-
-}
-
-@media screen and (max-width: 920px) {
-
-
 
   nav.responsive {position: relative;
   background-color: #c4b298;}
@@ -491,6 +474,7 @@ section{
  border: none;
  cursor: pointer;
 }
+
 .kort {
   background-image: url("../images/kort_front.jpg");
   background-color: rgba(0,0,0,0.5);
@@ -1206,7 +1190,6 @@ margin-top: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-size: contain;
    }
 
    .top-program {

@@ -329,7 +329,7 @@ width: 100%;
 
   /* Header responsive */
 @media screen and (max-width: 920px) {
-
+/*nedenstående forsvinder når ovenstående sker*/
   nav a, .dropdown img, .dropdown .droplang, .empty2 {
     display: none;
   }
@@ -474,6 +474,7 @@ section{
  border: none;
  cursor: pointer;
 }
+
 .kort {
   background-image: url("../images/kort_front.jpg");
   background-color: rgba(0,0,0,0.5);
@@ -1130,7 +1131,19 @@ margin-top: 20px;
   width: 50%;
   min-height: 220px;}
 
+  #main-program {
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
 
+  #main-program div {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
 }
 
 
@@ -1168,19 +1181,7 @@ margin-top: 20px;
   }
 
 
-  #main-program {
-      width: 95%;
-      margin: 0 auto;
-      text-align: center;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-  }
 
-  #main-program div {
-      -webkit-flex: 1;  /* Safari 6.1+ */
-      -ms-flex: 1;  /* IE 10 */
-      flex: 1;
-  }
 
 
    .program-background{

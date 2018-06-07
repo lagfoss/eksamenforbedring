@@ -864,20 +864,20 @@ color: #ecf6f8;
  }
 
 /* Rækkefølgen på kasserne i mobile */
- .event_img_left{ order: 1;
+ .event_img_left,.event_img_frugt{ order: 1;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;
  }
- .event_img_middle{ order: 3;
+ .event_img_middle,.event_img_larer{ order: 3;
  }
  .event_text_middle{order: 4;
    margin-bottom: 20px;
  }
- .event_img_right{order: 5;
+ .event_img_right,.event_img_snobrod{order: 5;
  }
  .event_text_right{order: 6;
-   margin-bottom: 20px;
+
  }
  .knap_all{
      order: 7;
@@ -997,6 +997,7 @@ color: #ecf6f8;
  }
 
  .event_img_left,.event_img_frugt{ order: 1;
+   margin-top: 20px;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;
@@ -1009,7 +1010,7 @@ color: #ecf6f8;
  .event_img_right,.event_img_snobrod{order: 5;
  }
  .event_text_right{order: 6;
-   margin-bottom: 20px;
+
  }
  .knap_all{
    order: 7;

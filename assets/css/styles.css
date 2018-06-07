@@ -45,6 +45,14 @@ Colors:
   /*
    * 1.0 Global
    */
+
+   /*
+   Holder form kasserne på plads i designet
+   */
+      * {
+          box-sizing: border-box;
+      }
+
    body {
           background-color: #c4b298;
           margin: 0;
@@ -516,7 +524,6 @@ section{
   background-image: url("../images/gabestok.jpg");
  background-position: center;
  background-size: cover;
- 
 }
 
 /* Tekstbox til artikel på forsiden og overblikartikler*/
@@ -584,9 +591,8 @@ section{
     font-size: 9px;
     color: #fff;
     background-color: #6a802a;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
-    width: 90px;
     cursor: pointer;
 }
 
@@ -615,18 +621,144 @@ input[type=file]{
     width: 205px;
 }
 
+/* PROGRAM */
+#main-program {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+#main-program div {
+    align-content: center;
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+}
+
+/*background image*/
+ .program-background{
+   margin: 0;
+   padding: 0;
+  margin-top: 20px;
+  background-image:url("../images/boatatriverbed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+ }
+
+ /* kasse nedenunder datonavnet, og rundt om alle grønne og blå kasser
+  (alle ementerne inde i dette div skal flexe horisontalt, ned ad)*/
+ .time-on-days {
+   display: flex;
+   width: 100%;
+   margin: auto;
+   flex-direction: column;
+}
+/* styling på alle div ellementer, både de grønne og blå kasser (grunden til at de ikke fylder hele skærmen)*/
+.time-on-days > div {
+   text-align: center;
+   width: 94%;
+   margin: 3%;
+   line-height: 100%;
+ }
+ /* kasse rundt om vær set af grøn og blå kasse (ellementerne inde i dette div
+ skal ikke flexe horisontalt længere)*/
+  .event-and-date {
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* placeringen +stying af den grønne kasse med tidspunkterne*/
+.time-frame{
+font-size: 20px;
+background-color: #667a29;
+line-height: 100%;
+max-width: 100px;
+color: #ecf6f8;
+}
+
+/* placeringen af den blå kasse med info om events*/
+.time-label{
+position: relative;
+display: inline-block;
+}
+
+.popup-info{
+width: 100%;
+height: 100%;
+border: none;
+background-color: #2d314e;
+color: #f4f3ef;
+cursor: pointer;
+}
+
+.popup-info2{
+position: absolute;
+z-index: 1;
+display: block;
+bottom: 0;
+visibility: hidden;
+min-width: 100%;
+min-height: 100%;
+background-color: #555;
+color: #fff;
+border-radius: 6px;
+padding: 10px;
+}
+
+.time-label .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0,5s;
+  animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* programmet nederst på siden, alle ellementerne (downbox) inde i denne box bliver flexet*/
+.top-program {
+justify-content: center;
+display:flex;
+flex-wrap: wrap;
+margin: 0 auto;
+width: 100%;
+}
+
+/*box med lidt styling, rundt om downandwhite + downandgreen */
+.downbox{
+max-width: 13%;
+min-width: 150px;
+margin: 6px;
+text-align: center;
+font-size: 13px;
+padding-bottom: 10px;
+}
+/*beskrivelse på flere-dags oplevelser*/
+.downandwhite{
+height: 50%;
+padding: 5px;
+margin-bottom: 0;
+background-color: #a19496;
+}
+/*tidspunkter på flere-dags oplevelser*/
+.downandgreen{
+height: 50%;
+padding-top: 10px;
+margin-bottom: 0;
+background-color: #667a29;
+color: #ecf6f8;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 419px) {
 
 /* Gør banneret midre på et af kortene i mobile*/
   .banner_map{
     width: 65px;
-  }
-
-/* Underoverskrifter til input felter*/
-  .label{
-    font-size: 13px;
-    margin: 20px 0 5px 0;
   }
 
 /* Skrift typer til mobile*/
@@ -803,12 +935,6 @@ input[type=file]{
 /* Banneret til den ene kort side*/
   .banner_map{
     width: 85px;
-  }
-
-/* Til inputfelterne */
-  .label{
-    font-size: 13px;
-    margin: 20px 0 5px 0;
   }
 
 /* Font-size i tablet */
@@ -1053,178 +1179,9 @@ input[type=file]{
 .seo_om_vmf,.seo_om_vmf2,.seo_om_vmf3,.praktiskinfo,.kortkontakt,.omfestivalen,.aktor,
 .article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
-  min-height: 220px;}
-
-.knappodcasti{
-      border-radius: 5px;
-      text-align: center;
-      border: 0px;
-      text-transform: uppercase;
-      font-size: 10px;
-      color: #fff;
-      background-color: #6a802a;
-      padding: 15px;
-      margin-bottom: 20px;
-      width: 150px;
+  min-height: 220px;
   }
-
-  .knappodcasti a:link{
-      text-decoration: none;
-      color: #fff;
-  }
-
-  .knappodcasti a:visited {
-      text-decoration: none;
-      color: #fff;
-  }
-
-  .knappodcasti a:hover {
-      text-decoration: none;
-
-      color: #c4b298;
-  }
-
-  .knappodcasti a:active {
-      text-decoration: none;
-  }
-
-  #main-program {
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-  }
-
-  #main-program div {
-      align-content: center;
-      -webkit-flex: 1;  /* Safari 6.1+ */
-      -ms-flex: 1;  /* IE 10 */
-      flex: 1;
-  }
-
-/*background image*/
-   .program-background{
-     margin: 0;
-     padding: 0;
-    margin-top: 20px;
-
-    background-image:url("../images/boatatriverbed.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-   }
-
-
-   /* kasse nedenunder datonavnet, og rundt om alle grønne og blå kasser
-    (alle ementerne inde i dette div skal flexe horisontalt, ned ad)*/
-   .time-on-days {
-     display: flex;
-     width: 100%;
-     margin: auto;
-     flex-direction: column;
 }
-/* styling på alle div ellementer, både de grønne og blå kasser (grunden til at de ikke fylder hele skærmen)*/
-  .time-on-days > div {
-     text-align: center;
-     width: 95%;
-     margin: 3%;
-     line-height: 100%;
-   }
-   /* kasse rundt om vær set af grøn og blå kasse (ellementerne inde i dette div
-   skal ikke flexe horisontalt længere)*/
-    .event-and-date {
-      display: flex;
-      flex-wrap: nowrap;
-}
-/* placeringen +stying af den grønne kasse med tidspunkterne*/
-.time-frame{
-  font-size: 20px;
-  background-color: #667a29;
-  line-height: 100%;
-  max-width: 100px;
-  color: #ecf6f8;
-}
-
-/* placeringen af den blå kasse med info om events*/
-.time-label{
-  position: relative;
-  display: inline-block;
-}
-
-.popup-info{
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: #2d314e;
-  color: #f4f3ef;
-  cursor: pointer;
-}
-
-.popup-info2{
-  position: absolute;
-  z-index: 1;
-  display: block;
-  bottom: 0;
-  visibility: hidden;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #555;
-  color: #fff;
-  border-radius: 6px;
-  padding: 10px;
-
-}
-
-.time-label .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 0,5s;
-    animation: fadeIn 0.5s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/*der var engang margin-top: -X antal pixels, for at få fleredags events h3'en lidt højre op */
-#fleredagsop{
-}
-
-/* programmet nederst på siden, alle ellementerne (downbox) inde i denne box bliver flexet*/
-.top-program {
-  justify-content: center;
-  display:flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/*box med lidt styling, rundt om downandwhite + downandgreen */
-.downbox{
-  max-width: 13%;
-  min-width: 150px;
-  margin: 6px;
-  text-align: center;
-  font-size: 13px;
-  padding-bottom: 10px;
-}
-/*beskrivelse på flere-dags oplevelser*/
-.downandwhite{
-  height: 50%;
-  margin-bottom: 0;
-  background-color: #a19496;
-}
-/*tidspunkter på flere-dags oplevelser*/
-.downandgreen{
-  height: 50%;
-  padding-top: 10px;
-  margin-bottom: 0;
-  background-color: #667a29;
-  color: #ecf6f8;
-}
-
 
 /*kort styles*/
 #kort1{
@@ -1233,13 +1190,10 @@ margin: 0px 0 0 0;
 padding: 0;
 min-height: 1200px;
 background-image: url("../images/korti.jpg");
-background-blend-mode: darken;
 background-position: center;
 background-size: cover;
 cursor: zoom-in;
 }
-
-
 
 #kort5{
 width: 100%;
@@ -1248,7 +1202,6 @@ background-image: url("../images/kort5.jpg");
 background-position: center;
 background-size: cover;
 cursor: zoom-out;
-
 }
 
 .semere{
@@ -1272,7 +1225,6 @@ cursor: zoom-out;
 }
 
 /*korttest*/
-
   .img-zoom-container {
     position: relative;
     margin-top: 20px;
@@ -1294,7 +1246,7 @@ cursor: zoom-out;
     /*set the size of the result div:*/
     width: 30%;
     height: 60%;
-    margin-left: -0px;
+    margin-left: 0px;
     margin-top: -49%;
     position: absolute;
     cursor: zoom-in;
@@ -1307,41 +1259,17 @@ cursor: zoom-out;
 
 .kortbrede{ width: 100%;}
 
-
-   /*kontakt styles*/
-
-
-   #hvor{
-     height: 100%;
-     width: 100%;
-     background-image: url("../images/hvor.jpg");
-background-repeat: no-repeat;
-margin-left: 35%;
-   }
-
+/* Underoverskrifter til input felter*/
 .label{
   font-size: 13px;
   margin: 20px 0 5px 0;
 }
 
-/*
-.labelform > label{
-  font-size: 8px;
-  margin-top: 30px;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-*/
-
-/*
-Holder form kasserne på plads i designet
-*/
-   * {
-       box-sizing: border-box;
-   }
-
+/* Alle inputfelter på de forskellige sider*/
    input[type=text], input[type=password], select, textarea {
-       width: 96.5%;
+       width: 95%;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 14px;
        padding: 12px;
        border: 1px solid #9b8368;
        border-radius: 4px;
@@ -1349,39 +1277,7 @@ Holder form kasserne på plads i designet
    }
    input[type=password] { margin-bottom: 10px;}
 
-
-   .col-25 {
-       float: left;
-       width: 25%;
-       margin-top: 6px;
-   }
-
-   .col-75 {
-       float: left;
-       width: 75%;
-       margin-top: 10px;
-   }
-
-   /* Clear floats after the columns */
-   .row:after {
-       content: "";
-       display: table;
-       clear: both;
-   }
-
-
    /*All Articles*/
-
-   .article_kasse1{
-     font-family: 'Montserrat', sans-serif;
-     margin: auto;
-     font-size: 20px;
-     padding: 20px 0px 0px 20px;
-     letter-spacing: 1.2pt;
-     color: #000;
-     font-weight: 700;
-     text-align: left;
-}
     .article1{
       background-image: url("../images/7kanten.jpg");
       background-position: center;
@@ -1408,36 +1304,7 @@ Holder form kasserne på plads i designet
       background-size: cover;
     }
 
-    .article_kasse1 p{
-      font-family: 'Montserrat', sans-serif;
-      margin: 20px 20px 30px 0;
-      font-weight: 300;
-      line-height: 14pt;
-      font-size:12px;
-    }
-
-    .article_kasse2{
-      font-family: 'Montserrat', sans-serif;
-      margin: auto;
-      font-size: 20px;
-      padding: 20px 0px 0px 20px;
-      letter-spacing: 1.2pt;
-      color: #000;
-      font-weight: 700;
-      text-align: left;
-      background-color: #ffffff;
-    }
-
-    .article_kasse2 p{
-      font-family: 'Montserrat', sans-serif;
-      margin: 20px 20px 30px 0;
-      font-weight: 300;
-      line-height: 14pt;
-      font-size:12px;
-    }
-
     /* Login Box */
-
     .login-box {
       background-color: #C4B298;
       margin: 150px auto auto auto;
@@ -1445,7 +1312,6 @@ Holder form kasserne på plads i designet
     }
 
     /* Add Zoom Animation */
-
     .animate {
       -webkit-animation: animatezoom 0.6s;
       animation: animatezoom 0.6s

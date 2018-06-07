@@ -1194,7 +1194,6 @@ margin: 0px 0 0 0;
 padding: 0;
 min-height: 1200px;
 background-image: url("../images/korti.jpg");
-background-blend-mode: darken;
 background-position: center;
 background-size: cover;
 cursor: zoom-in;
@@ -1207,7 +1206,6 @@ background-image: url("../images/kort5.jpg");
 background-position: center;
 background-size: cover;
 cursor: zoom-out;
-
 }
 
 .semere{
@@ -1231,7 +1229,6 @@ cursor: zoom-out;
 }
 
 /*korttest*/
-
   .img-zoom-container {
     position: relative;
     margin-top: 20px;
@@ -1253,7 +1250,7 @@ cursor: zoom-out;
     /*set the size of the result div:*/
     width: 30%;
     height: 60%;
-    margin-left: -0px;
+    margin-left: 0px;
     margin-top: -49%;
     position: absolute;
     cursor: zoom-in;
@@ -1265,18 +1262,6 @@ cursor: zoom-out;
   }
 
 .kortbrede{ width: 100%;}
-
-
-   /*kontakt styles*/
-
-
-   #hvor{
-     height: 100%;
-     width: 100%;
-     background-image: url("../images/hvor.jpg");
-background-repeat: no-repeat;
-margin-left: 35%;
-   }
 
 .label{
   font-size: 13px;
@@ -1308,7 +1293,6 @@ Holder form kasserne på plads i designet
    }
    input[type=password] { margin-bottom: 10px;}
 
-
    .col-25 {
        float: left;
        width: 25%;
@@ -1328,9 +1312,7 @@ Holder form kasserne på plads i designet
        clear: both;
    }
 
-
    /*All Articles*/
-
    .article_kasse1{
      font-family: 'Montserrat', sans-serif;
      margin: auto;
@@ -1396,7 +1378,6 @@ Holder form kasserne på plads i designet
     }
 
     /* Login Box */
-
     .login-box {
       background-color: #C4B298;
       margin: 150px auto auto auto;
@@ -1404,7 +1385,6 @@ Holder form kasserne på plads i designet
     }
 
     /* Add Zoom Animation */
-
     .animate {
       -webkit-animation: animatezoom 0.6s;
       animation: animatezoom 0.6s

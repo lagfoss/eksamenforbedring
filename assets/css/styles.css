@@ -482,7 +482,7 @@ section{
  cursor: pointer;
 }
 
-/* Billeder til artikel på forsiden*/
+/* Billeder til artikel på forsiden og overblikartikler*/
 .event_img_left {
   background-image: url("../images/7kanten.jpg");
  background-position: center;
@@ -511,24 +511,28 @@ section{
  background-position: center;
  background-size: cover;
 }
+
 .event_img_snobrod {
   background-image: url("../images/gabestok.jpg");
  background-position: center;
  background-size: cover;
 }
 
-
+/* Tekstbox til artikel på forsiden og overblikartikler*/
 .event_text_left,.event_text_middle,.event_text_right{
   background-color:#fff;
   background-position: center;
   background-size: cover;
 }
 
+/* Større tekstbox på forsiden*/
 .seo_om_vmf {
   background-color:#fff;
   background-position: center;
   background-size: cover;
 }
+
+/* Billeder til større tekstbox på forsiden*/
 .seo_om_vmf2 {
  background-image: url("../images/om_vmf.jpg");
  background-position: center;
@@ -540,41 +544,35 @@ section{
  background-size: cover;
 }
 
+/* Billede til soundcloud artikel på forsiden*/
 .soundcloud {
  background-image: url("../images/soundcloud.jpg");
  background-position: center;
  background-size: cover;
 }
 
-
+/* Kortet på kontakt og om festivalen*/
 .kortkontakt {
  background-image: url("../images/konkort.jpg");
  background-position: center;
  background-size: cover;
 }
 
+/* Billede til frivillig */
 .frivillig {
  background-image: url("../images/frivillig.jpg");
  background-position: center;
  background-size: cover;
 }
 
+/* Billede til aktør */
 .aktor {
  background-image: url("../images/mmm.jpg");
  background-position: center;
  background-size: cover;
 }
 
-.praktiskinfo {
-  background-image: url("../images/praktiskinfo.jpg");
- background-position: center;
- background-size: cover;
-}
-.omfestivalen {
-  background-image: url("../images/omfestivalen.jpg");
- background-position: center;
- background-size: cover;
-}
+/* Alle de mindre grønne knapper*/
 .knap1{
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -591,30 +589,13 @@ section{
     cursor: pointer;
 }
 
-.knap1 a:link{
-    text-decoration: none;
-    color: #fff;
-}
-
-.knap1 a:visited {
-    text-decoration: none;
-    color: #fff;
-}
-
-.knap1 a:hover {
-    text-decoration: none;
-
-    color: #c4b298;
-}
-
-.knap1 a:active {
-    text-decoration: none;
-}
-
+/* Knap til upload billeder, for at style den, skal selve knappen være display
+none for at fjerne default knap. Der ligger en label med class Knap1 ovenpå den*/
 input[type=file]{
   display: none;
 }
 
+/* Er den store grønne knap på forsiden*/
 .knap_all{
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -630,43 +611,24 @@ input[type=file]{
     color: #fff;
     background-color: #6a802a;
     padding: 12px;
-
     width: 205px;
 }
-
-.knap_all a:link{
-    text-decoration: none;
-    color: #fff;
-}
-
-.knap_all a:visited {
-    text-decoration: none;
-    color: #fff;
-}
-
-.knap_all a:hover {
-    text-decoration: none;
-
-    color: #c4b298;
-}
-
-.knap_all a:active {
-    text-decoration: none;
-}
-
 
 /* Mobile Styles */
 @media only screen and (max-width: 419px) {
 
+/* Gør banneret midre på et af kortene i mobile*/
   .banner_map{
     width: 65px;
   }
 
+/* Underoverskrifter til input felter*/
   .label{
     font-size: 13px;
     margin: 20px 0 5px 0;
   }
 
+/* Skrift typer til mobile*/
   h1 {
     font-family: augusta;
     margin: auto;
@@ -711,21 +673,25 @@ input[type=file]{
     font-weight: 700;
     text-align: center;
   }
+
   .event_kasse1{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
+
   .event_kasse1 p, #descrip{
     font-family: 'Montserrat', sans-serif;
     font-size:12px;
   }
 
+/* 100% bred gør at det lægger sig under hinanden*/
   .seo_om_vmf{
     width: 100%;
     margin-top: 20px;
     padding: 20px;
     min-height: 220px;}
 
+/* Denne holder breden på alt indhold */
   .indhold{
     padding-top: 20px;
     display: flex;
@@ -734,6 +700,7 @@ input[type=file]{
     margin: 0 auto;
   }
 
+/* Knapper på forsiden*/
   .program,
   .kort,
   .info{
@@ -742,17 +709,16 @@ input[type=file]{
     height: 185px;
     max-height: 185px;
  }
+
+/* Kasserne i footeren, nu lægger de sig under hinanden */
  .footer_left,
  .footer_middle,
  .footer_right{
    width: 100%;
    margin: 10px 0 10px 0;
-
 }
 
- .event_right1,
- .event_left2,
- .event_right2,
+/* Alle kasser til artikler på forsiden og overblikartikler, nu lægger de sig under hinanden */
  .event_text_left,
  .event_text_middle,
  .event_text_right,
@@ -763,9 +729,10 @@ input[type=file]{
  .event_img_larer,
  .event_img_snobrod{
    width: 100%;
-
    min-height: 220px;
  }
+
+/* Rækkefølgen på kasserne i mobile */
  .event_img_left{ order: 1;
  }
  .event_text_left{order: 2;
@@ -794,56 +761,56 @@ input[type=file]{
    order: 10;
  }
 
- .info{
-   margin-left: 1%;
- }
- .event_left2{margin-top: 20px;}
-
  footer {
-margin-top: 20px;
+   margin-top: 20px;
     width: 100%;
     background-color: #2d314e;
     color: white;
     text-align: center;
  }
 
- .socialmedier{
-   }
-
+/* Soundcloud i footeren */
    .sc{
-   width: 180px;
+   width: 150px;
    text-decoration: none;
-
-
    }
+
+/* Varde kommune logo footer */
    .vardekommune{
    width: 150px;
    min-width: 80px;
    }
+
+/* Er blevet brugt til alle socialemedier i footer */
  .fb{
    width: 40px;
    margin: 20px 20px 0 20px;
    text-decoration: none;
-
  }
 
+/* Fjerner blå steger på socialmedier ikoner */
  .socialmedier a:link{
      text-decoration: none;
      color: #fff;
  }
 }
+/* Mobile Styles slut */
+
 /* Tablet Styles */
 @media only screen and (min-width: 420px) and (max-width: 719px) {
 
+/* Banneret til den ene kort side*/
   .banner_map{
     width: 85px;
   }
 
+/* Til inputfelterne */
   .label{
     font-size: 13px;
     margin: 20px 0 5px 0;
   }
 
+/* Font-size i tablet */
   .event_kasse1{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -851,10 +818,6 @@ margin-top: 20px;
   .event_kasse1 p, #descrip{
     font-family: 'Montserrat', sans-serif;
     font-size:12px;
-  }
-  footer{
-    margin-top: 20px;
-    padding: 20px 20px 0 20px;
   }
   .overskrift{
     font-family: 'Montserrat', sans-serif;
@@ -868,32 +831,33 @@ margin-top: 20px;
     text-align: center;
   }
 
+  footer{
+    margin-top: 20px;
+    padding: 20px 20px 0 20px;
+  }
+
   .indhold{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
   }
+
   .program,
   .kort,
   .info{
     width: 32%;
     height: 185px;
-    margin-top: 30px;
     max-height: 185px;
-    height: 185px;
     margin-top: 20px;
  }
+
  .footer_left,
  .footer_middle,
  .footer_right{
    width: 100%;
-
 }
 
- .event_right1,
- .event_left2,
- .event_right2,
  .event_text_left,
  .event_text_middle,
  .event_text_right,
@@ -935,6 +899,7 @@ margin-top: 20px;
    order: 10;
  }
 
+/* Alle artikler */
 .aa_siden{
   margin-bottom:20px;
 }
@@ -945,7 +910,6 @@ margin-top: 20px;
  .program{
    margin-right: 2%;
  }
- .event_left2{margin-top: 20px;}
 
  .seo_om_vmf,.seo_om_vmf2,.kortkontakt,.frivillig{
    width: 100%;
@@ -963,7 +927,6 @@ margin-top: 20px;
       left: 0;
       bottom: 0;
       margin: 30px auto 00px auto;
-
       background-color: #2d314e;
       color: white;
       text-align: center;
@@ -972,20 +935,17 @@ margin-top: 20px;
    .socialmedier{
      width: 80%;
      margin: auto;
-
-
      }
+
      .sc{
-     width: 180px;
+     width: 150px;
      margin-bottom: 20px;
-
-
      }
+
      .vardekommune{
        margin: auto;
      width: 150px;
      margin-bottom: 20px;
-
      }
 
    .fb{
@@ -1000,6 +960,7 @@ margin-top: 20px;
    }
 
 }
+/* Tablet Styles slut */
 
 /* Desktop Styles */
 @media only screen and (min-width: 720px) {
@@ -1019,14 +980,13 @@ margin-top: 20px;
      text-align: center;
   }
 
-
   .socialmedier{
     width: 200px;
   padding: 50px 0 0 0;
 
     }
     .sc{
-    width: 200px;
+    width: 180px;
     float: right;
     }
     .vardekommune{
@@ -1041,7 +1001,6 @@ margin-top: 20px;
       text-decoration: none;
   }
 
-
   .knap_all{
     margin-top: 20px;
   }
@@ -1053,6 +1012,7 @@ margin-top: 20px;
    width: 80%;
    margin: 0 auto;
  }
+
  .program,
  .kort,
  .info,
@@ -1064,9 +1024,6 @@ margin-top: 20px;
    max-height: 185px;
 }
 
-.event_right1,
-.event_left2,
-.event_right2,
 .event_text_left,
 .event_text_middle,
 .event_text_right,
@@ -1082,7 +1039,7 @@ margin-top: 20px;
 .event_img_middle,.event_img_right,.event_text_middle,.event_text_right,.event_img_snobrod{
   margin-left: 2%;
 }
-.event_left,.event_img_frugt{
+.event_img_frugt{
   margin-right: 2%;
 }
 .info,.footer_right{
@@ -1095,22 +1052,6 @@ margin-top: 20px;
 .article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;}
-
-/*  #main-program {
-      width: 95%;
-      margin: 0 auto;
-      text-align: center;
-      display: -webkit-flex; /* Safari */
-/*      display: flex;
-  }
-
-  #main-program div {
-      -webkit-flex: 1;  /* Safari 6.1+ */
-/*      -ms-flex: 1;  /* IE 10 */
-/*      flex: 1;
-  }
-}
-*/
 
 .knappodcasti{
       border-radius: 5px;

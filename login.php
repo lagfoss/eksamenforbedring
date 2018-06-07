@@ -5,7 +5,7 @@ $pass = $_POST['pass'];
 if($user == "admin"
 && $pass == "admin")
 {
-
+/* sender os videre til klient siden*/
   header("Location:klient.html");
 }
 else

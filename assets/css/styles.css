@@ -111,7 +111,6 @@ color: #fff;
 h4{
 text-align: center;
 font-family: 'Montserrat', sans-serif;
-margin-top: 68px;
 font-size: 2.5vw;
 font-weight: 700;
 letter-spacing: 0.75pt;
@@ -152,9 +151,9 @@ width: 100%;
 
 /* 'Artikler' på index, samt i styleguiden */
 .overskrift{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'augusta','Montserrat', sans-serif;
   margin: auto;
-  font-size: 40px;
+  font-size: 50px;
   padding: 40px 20px 0px 20px;
   letter-spacing: 1.2pt;
   line-height: 44pt;
@@ -787,7 +786,6 @@ color: #ecf6f8;
   h4{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 68px;
   font-size: 5.5vw;
   font-weight: 700;
   letter-spacing: 0.75pt;
@@ -866,20 +864,20 @@ color: #ecf6f8;
  }
 
 /* Rækkefølgen på kasserne i mobile */
- .event_img_left{ order: 1;
+ .event_img_left,.event_img_frugt{ order: 1;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;
  }
- .event_img_middle{ order: 3;
+ .event_img_middle,.event_img_larer{ order: 3;
  }
  .event_text_middle{order: 4;
    margin-bottom: 20px;
  }
- .event_img_right{order: 5;
+ .event_img_right,.event_img_snobrod{order: 5;
  }
  .event_text_right{order: 6;
-   margin-bottom: 20px;
+
  }
  .knap_all{
      order: 7;
@@ -999,6 +997,7 @@ color: #ecf6f8;
  }
 
  .event_img_left,.event_img_frugt{ order: 1;
+   margin-top: 20px;
  }
  .event_text_left{order: 2;
    margin-bottom: 20px;
@@ -1011,7 +1010,7 @@ color: #ecf6f8;
  .event_img_right,.event_img_snobrod{order: 5;
  }
  .event_text_right{order: 6;
-   margin-bottom: 20px;
+
  }
  .knap_all{
    order: 7;

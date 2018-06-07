@@ -151,9 +151,9 @@ width: 100%;
 
 /* 'Artikler' på index, samt i styleguiden */
 .overskrift{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'augusta','Montserrat', sans-serif;
   margin: auto;
-  font-size: 40px;
+  font-size: 50px;
   padding: 40px 20px 0px 20px;
   letter-spacing: 1.2pt;
   line-height: 44pt;

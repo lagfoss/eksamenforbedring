@@ -1148,7 +1148,6 @@ margin-top: 20px;
 
   #main-program {
       width: 100%;
-      margin: 0;
       margin: auto;
       text-align: center;
       display: -webkit-flex; /* Safari */
@@ -1162,7 +1161,7 @@ margin-top: 20px;
       flex: 1;
   }
 
-
+/*background image*/
    .program-background{
      margin: 0;
      padding: 0;
@@ -1183,10 +1182,10 @@ margin-top: 20px;
      margin: auto;
      flex-direction: column;
 }
-/* styling på alle div ellementer, både de grønne og blå kasser*/
+/* styling på alle div ellementer, både de grønne og blå kasser (grunden til at de ikke fylder hele skærmen)*/
   .time-on-days > div {
      text-align: center;
-     width: 90%;
+     width: 95%;
      margin: 3%;
      line-height: 100%;
    }
@@ -1221,16 +1220,18 @@ margin-top: 20px;
 }
 
 .popup-info2{
+  position: absolute;
+  z-index: 1;
+  display: block;
   bottom: 0;
+  visibility: hidden;
   min-width: 100%;
   min-height: 100%;
-  visibility: hidden;
   background-color: #555;
   color: #fff;
   border-radius: 6px;
   padding: 10px;
-  position: absolute;
-  z-index: 1;
+
 }
 
 .time-label .show {

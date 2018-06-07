@@ -515,6 +515,7 @@ section{
   background-image: url("../images/gabestok.jpg");
  background-position: center;
  background-size: cover;
+ 
 }
 
 
@@ -1144,7 +1145,6 @@ margin-top: 20px;
   .knappodcasti a:active {
       text-decoration: none;
   }
-
 
   #main-program {
       width: 100%;

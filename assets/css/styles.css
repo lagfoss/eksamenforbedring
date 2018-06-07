@@ -516,7 +516,6 @@ section{
   background-image: url("../images/gabestok.jpg");
  background-position: center;
  background-size: cover;
- 
 }
 
 /* Tekstbox til artikel på forsiden og overblikartikler*/
@@ -1054,39 +1053,6 @@ input[type=file]{
 .article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;}
-
-.knappodcasti{
-      border-radius: 5px;
-      text-align: center;
-      border: 0px;
-      text-transform: uppercase;
-      font-size: 10px;
-      color: #fff;
-      background-color: #6a802a;
-      padding: 15px;
-      margin-bottom: 20px;
-      width: 150px;
-  }
-
-  .knappodcasti a:link{
-      text-decoration: none;
-      color: #fff;
-  }
-
-  .knappodcasti a:visited {
-      text-decoration: none;
-      color: #fff;
-  }
-
-  .knappodcasti a:hover {
-      text-decoration: none;
-
-      color: #c4b298;
-  }
-
-  .knappodcasti a:active {
-      text-decoration: none;
-  }
 
   #main-program {
       width: 100%;

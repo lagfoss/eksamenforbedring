@@ -45,9 +45,9 @@ else
 
                 <div class="login-box animate">
                 <form method="POST" action="login.php">
-                        <label><b>Username</b></label>
+                        <label class="label"><b>Username</b></label>
                         <input type="text" name="user"></input>
-                        <label><b>Password</b></label>
+                        <label class="label"><b>Password</b></label>
                         <input type="password" name="pass"></input>
                         <input type="submit" name="submit" value="LOGIN" class="knap1"></input>
                         </form>

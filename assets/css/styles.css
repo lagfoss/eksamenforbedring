@@ -45,6 +45,14 @@ Colors:
   /*
    * 1.0 Global
    */
+
+   /*
+   Holder form kasserne på plads i designet
+   */
+      * {
+          box-sizing: border-box;
+      }
+
    body {
           background-color: #c4b298;
           margin: 0;
@@ -753,12 +761,6 @@ color: #ecf6f8;
     width: 65px;
   }
 
-/* Underoverskrifter til input felter*/
-  .label{
-    font-size: 13px;
-    margin: 20px 0 5px 0;
-  }
-
 /* Skrift typer til mobile*/
   h1 {
     font-family: augusta;
@@ -933,12 +935,6 @@ color: #ecf6f8;
 /* Banneret til den ene kort side*/
   .banner_map{
     width: 85px;
-  }
-
-/* Til inputfelterne */
-  .label{
-    font-size: 13px;
-    margin: 20px 0 5px 0;
   }
 
 /* Font-size i tablet */
@@ -1263,29 +1259,17 @@ cursor: zoom-out;
 
 .kortbrede{ width: 100%;}
 
+/* Underoverskrifter til input felter*/
 .label{
   font-size: 13px;
   margin: 20px 0 5px 0;
 }
 
-/*
-.labelform > label{
-  font-size: 8px;
-  margin-top: 30px;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-*/
-
-/*
-Holder form kasserne på plads i designet
-*/
-   * {
-       box-sizing: border-box;
-   }
-
+/* Alle inputfelter på de forskellige sider*/
    input[type=text], input[type=password], select, textarea {
-       width: 96.5%;
+       width: 95%;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 14px;
        padding: 12px;
        border: 1px solid #9b8368;
        border-radius: 4px;
@@ -1293,36 +1277,7 @@ Holder form kasserne på plads i designet
    }
    input[type=password] { margin-bottom: 10px;}
 
-   .col-25 {
-       float: left;
-       width: 25%;
-       margin-top: 6px;
-   }
-
-   .col-75 {
-       float: left;
-       width: 75%;
-       margin-top: 10px;
-   }
-
-   /* Clear floats after the columns */
-   .row:after {
-       content: "";
-       display: table;
-       clear: both;
-   }
-
    /*All Articles*/
-   .article_kasse1{
-     font-family: 'Montserrat', sans-serif;
-     margin: auto;
-     font-size: 20px;
-     padding: 20px 0px 0px 20px;
-     letter-spacing: 1.2pt;
-     color: #000;
-     font-weight: 700;
-     text-align: left;
-}
     .article1{
       background-image: url("../images/7kanten.jpg");
       background-position: center;
@@ -1347,34 +1302,6 @@ Holder form kasserne på plads i designet
       background-image: url("../images/soundcloud.jpg");
       background-position: center;
       background-size: cover;
-    }
-
-    .article_kasse1 p{
-      font-family: 'Montserrat', sans-serif;
-      margin: 20px 20px 30px 0;
-      font-weight: 300;
-      line-height: 14pt;
-      font-size:12px;
-    }
-
-    .article_kasse2{
-      font-family: 'Montserrat', sans-serif;
-      margin: auto;
-      font-size: 20px;
-      padding: 20px 0px 0px 20px;
-      letter-spacing: 1.2pt;
-      color: #000;
-      font-weight: 700;
-      text-align: left;
-      background-color: #ffffff;
-    }
-
-    .article_kasse2 p{
-      font-family: 'Montserrat', sans-serif;
-      margin: 20px 20px 30px 0;
-      font-weight: 300;
-      line-height: 14pt;
-      font-size:12px;
     }
 
     /* Login Box */

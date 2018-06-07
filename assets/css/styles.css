@@ -482,6 +482,7 @@ section{
  cursor: pointer;
 }
 
+/* Billeder til artikel på forsiden*/
 .event_img_left {
   background-image: url("../images/7kanten.jpg");
  background-position: center;
@@ -1096,21 +1097,21 @@ margin-top: 20px;
   width: 50%;
   min-height: 220px;}
 
-  #main-program {
+/*  #main-program {
       width: 95%;
       margin: 0 auto;
       text-align: center;
       display: -webkit-flex; /* Safari */
-      display: flex;
+/*      display: flex;
   }
 
   #main-program div {
       -webkit-flex: 1;  /* Safari 6.1+ */
-      -ms-flex: 1;  /* IE 10 */
-      flex: 1;
+/*      -ms-flex: 1;  /* IE 10 */
+/*      flex: 1;
   }
 }
-
+*/
 
 .knappodcasti{
       border-radius: 5px;
@@ -1146,81 +1147,56 @@ margin-top: 20px;
   }
 
 
+  #main-program {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
+
   #main-program div {
+      align-content: center;
       -webkit-flex: 1;  /* Safari 6.1+ */
       -ms-flex: 1;  /* IE 10 */
       flex: 1;
   }
 
-
+/*background image*/
    .program-background{
-   margin-top: 20px;
+     margin: 0;
+     padding: 0;
+    margin-top: 20px;
+
     background-image:url("../images/boatatriverbed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
    }
 
-   .top-program {
-     justify-content: center;
-     display:flex;
-     flex-wrap: wrap;
-     margin: 0 auto;
-     width: 100%;
-   }
 
-   .top-program > div {
-     max-width: 13%;
-     min-width: 150px;
-     margin: 6px;
-     text-align: center;
-     font-size: 13px;
-   }
-
-   #fleredagsop{
-   }
-
-   .downbox{
-     background-color:#a19496;
-     min-height: 150px;
-     margin: 0.5%;
-     padding-bottom: 10px;
-   }
-
-   .downandwhite{
-     height: 50%;
-     margin-bottom: 0;
-     background-color: #a19496;
-   }
-
-   .downandgreen{
-     height: 50%;
-     padding-top: 10px;
-     margin-bottom: 0;
-     background-color: #667a29;
-     color: #ecf6f8;
-   }
-
+   /* kasse nedenunder datonavnet, og rundt om alle grønne og blå kasser
+    (alle ementerne inde i dette div skal flexe horisontalt, ned ad)*/
    .time-on-days {
      display: flex;
      width: 100%;
      margin: auto;
      flex-direction: column;
 }
-
+/* styling på alle div ellementer, både de grønne og blå kasser (grunden til at de ikke fylder hele skærmen)*/
   .time-on-days > div {
-     background-color: #ecf6f8;
      text-align: center;
-     width: 90%;
+     width: 95%;
      margin: 3%;
      line-height: 100%;
    }
-
+   /* kasse rundt om vær set af grøn og blå kasse (ellementerne inde i dette div
+   skal ikke flexe horisontalt længere)*/
     .event-and-date {
       display: flex;
       flex-wrap: nowrap;
 }
-
+/* placeringen +stying af den grønne kasse med tidspunkterne*/
 .time-frame{
   font-size: 20px;
   background-color: #667a29;
@@ -1229,6 +1205,7 @@ margin-top: 20px;
   color: #ecf6f8;
 }
 
+/* placeringen af den blå kasse med info om events*/
 .time-label{
   position: relative;
   display: inline-block;
@@ -1238,21 +1215,24 @@ margin-top: 20px;
   width: 100%;
   height: 100%;
   border: none;
-  background-color: #2e304f;
+  background-color: #2d314e;
   color: #f4f3ef;
   cursor: pointer;
 }
 
 .popup-info2{
-  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  bottom: 0;
   visibility: hidden;
+  min-width: 100%;
+  min-height: 100%;
   background-color: #555;
   color: #fff;
   border-radius: 6px;
   padding: 10px;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
+
 }
 
 .time-label .show {
@@ -1266,6 +1246,44 @@ margin-top: 20px;
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+/*der var engang margin-top: -X antal pixels, for at få fleredags events h3'en lidt højre op */
+#fleredagsop{
+}
+
+/* programmet nederst på siden, alle ellementerne (downbox) inde i denne box bliver flexet*/
+.top-program {
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*box med lidt styling, rundt om downandwhite + downandgreen */
+.downbox{
+  max-width: 13%;
+  min-width: 150px;
+  margin: 6px;
+  text-align: center;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+/*beskrivelse på flere-dags oplevelser*/
+.downandwhite{
+  height: 50%;
+  margin-bottom: 0;
+  background-color: #a19496;
+}
+/*tidspunkter på flere-dags oplevelser*/
+.downandgreen{
+  height: 50%;
+  padding-top: 10px;
+  margin-bottom: 0;
+  background-color: #667a29;
+  color: #ecf6f8;
+}
+
 
 /*kort styles*/
 #kort1{

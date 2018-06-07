@@ -1185,13 +1185,12 @@ color: #ecf6f8;
 
 /*kort styles*/
 #kort1{
-width: 100%;
-margin: 0px 0 0 0;
-padding: 0;
-min-height: 1200px;
-background-image: url("../images/korti.jpg");
+min-height: 800px;
+margin-top: 100px;
+background-image: url("../images/korti2.jpg");
 background-position: center;
-background-size: cover;
+background-size: auto;
+background-repeat:no-repeat;
 cursor: zoom-in;
 }
 

@@ -119,14 +119,14 @@ function moveLens(e) {
       }
 
 
-
-//nulstil og læs forfra hver gang jeg bevægermusen
   function getCursorPos(e) {
         var a, x = 0,
           y = 0;
     /*
 The variable evt is assigned to the value of event or if event is undefined it is assigned the value of window.event.
-How this works is that in javascript, boolean operators don't evaluate to true or false but instead evaluates to the value of the last object that is not falsy* or the falsy value.  // betyder eller */
+How this works is that in javascript, boolean operators don't evaluate to true or false but
+instead evaluates to the value of the last object that is not falsy* or the falsy value.  // betyder eller
+Hvis musen ikke bevæger sig, så viser det lille kort sidstegang musen bevægede sig*/
         e = e || window.event;
 
         /*her fås x og y positioner af det store kort

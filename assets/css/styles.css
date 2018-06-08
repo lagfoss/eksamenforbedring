@@ -697,7 +697,7 @@ cursor: pointer;
 position: absolute;
 z-index: 1;
 display: block;
-bottom: -3%;
+bottom: -2%;
 font-size: 14px;
 visibility: hidden;
 min-width: 100%;
@@ -1087,6 +1087,7 @@ color: #ecf6f8;
        color: #fff;
    }
 
+
 }
 /* Tablet Styles slut */
 
@@ -1263,7 +1264,7 @@ cursor: zoom-out;
     width: 30%;
     height: 60%;
     margin-left: 0px;
-    margin-top: -49.6%;
+    margin-top: -49%;
     position: absolute;
     cursor: zoom-in;
   }

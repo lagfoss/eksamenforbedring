@@ -7,11 +7,11 @@ function Language() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.droplang')) {
-
-    var dropdowns = document.getElementsByClassName("droplang-content");
+// i = kassens indhold
+    var dropdown = document.getElementsByClassName("droplang-content");
     var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+    for (i = 0; i < dropdown.length; i++) {
+      var openDropdown = dropdown[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }

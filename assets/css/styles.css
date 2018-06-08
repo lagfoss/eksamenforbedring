@@ -374,6 +374,19 @@ width: 100%;
     width: 100%;
     text-align: left;
   }
+
+  /* Holder breden på programmet i responsive*/
+  #main-program {
+      margin: auto;
+      text-align: center;
+  }
+
+  #main-program div {
+      align-content: center;
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
 }
 
 /* Billedet på forsiden*/
@@ -621,20 +634,7 @@ input[type=file]{
 }
 
 /* PROGRAM */
-#main-program {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-}
 
-#main-program div {
-    align-content: center;
-    -webkit-flex: 1;  /* Safari 6.1+ */
-    -ms-flex: 1;  /* IE 10 */
-    flex: 1;
-}
 
 /*background image*/
  .program-background{
@@ -1179,6 +1179,22 @@ color: #ecf6f8;
 .article1,.article2,.article3,.article4,.article5,.article_kasse2,.frivillig,.soundcloud{
   width: 50%;
   min-height: 220px;
+  }
+
+/* Program responsive */
+  #main-program {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+  }
+
+  #main-program div {
+      align-content: center;
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
   }
 }
 

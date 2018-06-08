@@ -657,6 +657,7 @@ input[type=file]{
 }
 /* styling på alle div ellementer, både de grønne og blå kasser (grunden til at de ikke fylder hele skærmen)*/
 .time-on-days > div {
+  background-color: #ecf6f8;
    text-align: center;
    width: 94%;
    margin: 3%;
@@ -696,7 +697,8 @@ cursor: pointer;
 position: absolute;
 z-index: 1;
 display: block;
-bottom: 0;
+bottom: -3%;
+font-size: 14px;
 visibility: hidden;
 min-width: 100%;
 min-height: 100%;
@@ -1180,6 +1182,7 @@ color: #ecf6f8;
   width: 50%;
   min-height: 220px;
   }
+
 }
 
 /*kort styles*/
@@ -1245,7 +1248,7 @@ cursor: zoom-out;
     width: 30%;
     height: 60%;
     margin-left: 0px;
-    margin-top: -49%;
+    margin-top: -49.6%;
     position: absolute;
     cursor: zoom-in;
   }

@@ -5,18 +5,27 @@ User-agent: googlebot-image
 Disallow: 
 User-agent: googlebot-mobile
 Disallow: 
-User-agent: MSNBot
-Disallow: 
-User-agent: Slurp
-Disallow: 
 User-agent: Teoma
-Disallow: 
+Disallow: /
+User-agent: Gigabot
+Disallow: /
+User-agent: Robozilla
+Disallow: /
+User-agent: Nutch
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: baiduspider
+Disallow: /
+User-agent: naverbot
+Disallow: /
+User-agent: yeti
+Disallow: /
 User-agent: yahoo-mmcrawler
-Disallow: 
-User-agent: yahoo-blogs/v3.9
-Disallow: 
+Disallow: /
+User-agent: psbot
+Disallow: /
 User-agent: *
 Disallow: 
-Crawl-delay: 10
 Disallow: /cgi-bin/
-Sitemap: http://lagfoss.com/eksamensprojekt/index.html
+Sitemap: http://www.lagfoss.com/eksamenforbedring/sitemap.xml

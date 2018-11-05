@@ -121,6 +121,7 @@ color: #fff;
 }
 
 footer{
+  position: fixed;
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   letter-spacing: 1.3pt;
@@ -128,6 +129,7 @@ footer{
   color: #fff;
   font-weight: 300;
   padding-top: 20px;
+  margin-bottom: 30px;
   min-height: 80px;
 }
 
